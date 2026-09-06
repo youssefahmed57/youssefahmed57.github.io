@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youssef Ahmed - Data Analyst & AI Agent Developer. Turning data into clear insights and repetitive tasks into smart automation.">
+    <meta name="keywords" content="Data Analyst, AI Agent Developer, Power BI, Python, Excel, Automation, Portfolio">
+    <meta name="author" content="Youssef Ahmed">
+    <title>Youssef Ahmed | Data Analyst & AI Agent Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Devicons for tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+
+    <!-- ========== CANVAS PARTICLES BACKGROUND ========== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="#hero" class="logo">
+                <i class="fas fa-chart-line logo-icon"></i>
+                <span data-key="logoName">Y.Ahmed</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link" data-key="navAbout">About</a></li>
+                <li><a href="#services" class="nav-link" data-key="navWhatIDo">What I Do</a></li>
+                <li><a href="#approach" class="nav-link" data-key="navApproach">Approach</a></li>
+                <li><a href="#skills" class="nav-link" data-key="navSkills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-key="navProjects">Featured Work</a></li>
+                <li><a href="#contact" class="nav-link" data-key="navContact">Contact</a></li>
+            </ul>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
+                    <span style="font-weight:700; font-size: 0.85rem;">AR</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== 1. COVER / HERO ========== -->
+    <section class="hero section" id="hero">
+        <div class="hero-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting" data-key="heroGreeting">👋 Hello, I'm</span>
+                <h1 class="hero-title gradient-text" data-key="heroName">Youssef Ahmed</h1>
+                <div class="typing-container" id="typingText">
+                    <h2 data-key="heroTitle">Data Analyst & AI Agent Developer</h2>
+                </div>
+                <p class="hero-subtitle" data-key="heroSubtitle">
+                    Turning data into clear insights and repetitive tasks into smart automation
+                </p>
+
+                <!-- Badges / Pills Under Hero -->
+                <div class="hero-pills">
+                    <span class="hero-pill"><i class="devicon-python-plain"></i> Python</span>
+                    <span class="hero-pill"><i class="fas fa-chart-bar"></i> Power BI</span>
+                    <span class="hero-pill"><i class="fas fa-file-excel"></i> Excel</span>
+                    <span class="hero-pill"><i class="fas fa-robot"></i> AI Agents</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-key="heroCTA1">
+                        <i class="fas fa-handshake" style="margin-right:8px;"></i> Let’s Work Together
+                    </a>
+                    <a href="#projects" class="btn btn-outline" data-key="heroCTA2">
+                        <i class="fas fa-folder-open" style="margin-right:8px;"></i> View Featured Work
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <img class="hero-image" src="profile.png" alt="Youssef Ahmed - Data Analyst & AI Agent Developer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 2. ABOUT ME & 3. MY JOURNEY ========== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="aboutTitle">About Me</h2>
+            
+            <div class="about-grid" style="margin-top: 2rem;">
+                <div class="about-image">
+                    <img class="about-img" src="profile.png" alt="Youssef Ahmed" style="height:440px;object-fit:cover;object-position:top;">
+                </div>
+                <div class="about-content">
+                    <h3 data-key="aboutSubtitle">Connecting Data Analysis with Smart Automation</h3>
+                    <p class="about-text" data-key="aboutBio">
+                        I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation, so I do not just show what the data says—I help turn those insights into dashboards, workflows, and intelligent solutions that create real business value.
+                    </p>
+
+                    <!-- Personal Brand Highlight Callout -->
+                    <div class="brand-callout animate-on-scroll fade-in-up">
+                        <i class="fas fa-bolt brand-callout-icon"></i>
+                        <div class="brand-callout-text" data-key="brandHighlight">
+                            I connect Data Analysis with Automation
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-item animate-on-scroll fade-in-up">
+                            <span class="stat-number gradient-text" data-count="2">0</span>
+                            <span class="stat-label" data-key="statExp">Years Experience</span>
+                        </div>
+                        <div class="stat-item animate-on-scroll fade-in-up">
+                            <span class="stat-number gradient-text" data-count="50">0</span>
+                            <span class="stat-label" data-key="statProjects">Projects Done</span>
+                        </div>
+                        <div class="stat-item animate-on-scroll fade-in-up">
+                            <span class="stat-number gradient-text" data-count="30">0</span>
+                            <span class="stat-label" data-key="statClients">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. My Journey Box -->
+            <div class="journey-card animate-on-scroll fade-in-up" style="margin-top: 3.5rem;">
+                <h3 style="color:var(--accent-cyan);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;">
+                    <i class="fas fa-compass"></i> <span data-key="journeyTitle">My Journey</span>
+                </h3>
+                <p style="font-size:1.1rem;line-height:1.8;color:var(--text-dark-muted);" data-key="journeyText">
+                    I started my journey with a simple curiosity about what numbers could reveal beyond the surface. Over time, that curiosity grew into a passion for analyzing information, solving real problems, and finding smarter ways to work. As I explored Python, Power BI, Excel, and AI Agents, I discovered that the real value is not in the tools themselves, but in how they can work together to turn information into action.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 4. WHAT I DO ========== -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="whatIDoTitle">What I Do</h2>
+            <div class="projects-grid" style="margin-top: 2rem;">
+                <!-- Pillar 1: Data Analysis -->
+                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
+                    <div class="project-content" style="padding:2.5rem;">
+                        <div style="font-size:2.8rem;margin-bottom:1rem;">📊</div>
+                        <h4 class="project-title" data-key="service1Title">Data Analysis</h4>
+                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service1Desc">
+                            Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make better decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Power BI Dashboards -->
+                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
+                    <div class="project-content" style="padding:2.5rem;">
+                        <div style="font-size:2.8rem;margin-bottom:1rem;">📈</div>
+                        <h4 class="project-title" data-key="service2Title">Power BI Dashboards</h4>
+                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service2Desc">
+                            Building interactive dashboards, KPI reports, and visualizations that make business performance easy to understand and monitor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Excel Solutions -->
+                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
+                    <div class="project-content" style="padding:2.5rem;">
+                        <div style="font-size:2.8rem;margin-bottom:1rem;">📑</div>
+                        <h4 class="project-title" data-key="service3Title">Excel Solutions</h4>
+                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service3Desc">
+                            Cleaning, organizing, analyzing, and automating data to create reliable reports and practical everyday business solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4: AI Agents & Automation -->
+                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
+                    <div class="project-content" style="padding:2.5rem;">
+                        <div style="font-size:2.8rem;margin-bottom:1rem;">🤖</div>
+                        <h4 class="project-title" data-key="service4Title">AI Agents & Automation</h4>
+                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service4Desc">
+                            Building practical AI Agents and automated workflows that reduce repetitive work, save time, and dramatically improve business efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 5. MY APPROACH (3 Steps) ========== -->
+    <section class="about section" id="approach">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="approachTitle">My Approach</h2>
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="approachSubtitle">
+                A structured, problem-first methodology that focuses on outcomes, not just tools.
+            </p>
+            <div class="approach-grid">
+                <!-- Step 1: Understand -->
+                <div class="approach-card animate-on-scroll fade-in-up">
+                    <div class="approach-num">1</div>
+                    <h4 class="approach-title" data-key="step1Title">Understand</h4>
+                    <p class="approach-desc" data-key="step1Desc">
+                        I start by understanding the real business problem before choosing the tools.
+                    </p>
+                </div>
+
+                <!-- Step 2: Analyze -->
+                <div class="approach-card animate-on-scroll fade-in-up">
+                    <div class="approach-num">2</div>
+                    <h4 class="approach-title" data-key="step2Title">Analyze</h4>
+                    <p class="approach-desc" data-key="step2Desc">
+                        I organize and analyze the available data to identify what really matters.
+                    </p>
+                </div>
+
+                <!-- Step 3: Build -->
+                <div class="approach-card animate-on-scroll fade-in-up">
+                    <div class="approach-num">3</div>
+                    <h4 class="approach-title" data-key="step3Title">Build</h4>
+                    <p class="approach-desc" data-key="step3Desc">
+                        I turn the insights into dashboards, reports, automations, or AI-powered solutions that can be used in real work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 6. SKILLS ========== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="skillsTitle">Skills & Technologies</h2>
+            <div class="cards-grid-4" style="margin-top: 2rem;">
+                <!-- Category 1: Data Analytics -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4 class="value-card-title" data-key="skillGroup1Title">Data Analytics</h4>
+                    <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup1Desc">
+                        Core analytics stack for data wrangling, modeling, and business intelligence:
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Power Query</span>
+                        <span class="tech-tag">DAX</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: AI & Automation -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-robot"></i></div>
+                    <h4 class="value-card-title" data-key="skillGroup2Title">AI & Automation</h4>
+                    <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup2Desc">
+                        Building intelligent agents, automated workflows, and connected systems:
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AI Agents</span>
+                        <span class="tech-tag">Workflow Automation</span>
+                        <span class="tech-tag">LLM Integration</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">n8n</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Tools & Core Competencies -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-tools"></i></div>
+                    <h4 class="value-card-title" data-key="skillGroup3Title">Tools & Competencies</h4>
+                    <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup3Desc">
+                        Practical tools and methods applied directly to client and business projects:
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Jupyter Notebook</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Data Cleaning</span>
+                        <span class="tech-tag">Business Reporting</span>
+                        <span class="tech-tag">KPI Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 10. USP (VISUAL IMPACT SECTION) ========== -->
+    <section class="usp-section">
+        <div class="container">
+            <span class="usp-quote-badge" data-key="uspBadge">Personal Vision & Promise</span>
+            <h2 class="usp-statement" data-key="uspStatement">
+                "From raw data to clear decisions. From repetitive work to smart automation."
+            </h2>
+        </div>
+    </section>
+
+    <!-- ========== 7. EXPERIENCE & 8. EDUCATION ========== -->
+    <section class="section">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="contact-container">
+                <!-- Experience -->
+                <div>
+                    <h3 style="color:var(--accent-cyan);margin-bottom:1.75rem;display:flex;align-items:center;gap:0.75rem;">
+                        <i class="fas fa-briefcase"></i> <span data-key="expSectionTitle">Experience</span>
+                    </h3>
+                    <div class="journey-card animate-on-scroll fade-in-up">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem;">
+                            <h4 style="font-size:1.25rem;margin:0;" data-key="expJobTitle">Freelance Data Analyst & AI Agent Developer</h4>
+                            <span class="edu-badge-year" data-key="expType">Freelance</span>
+                        </div>
+                        <p style="color:var(--text-dark-muted);margin-bottom:1.25rem;" data-key="expSummary">
+                            Helping businesses and individuals analyze data, build dashboards, automate repetitive tasks, and develop practical AI-powered solutions based on their needs.
+                        </p>
+                        <ul style="display:flex;flex-direction:column;gap:0.75rem;">
+                            <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
+                                <span data-key="expPoint1"><strong>Data Analysis & Reporting:</strong> Turning raw data into organized reports and useful business insights.</span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
+                                <span data-key="expPoint2"><strong>Dashboards:</strong> Creating clear interactive dashboards for monitoring KPIs and performance.</span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
+                                <span data-key="expPoint3"><strong>Automation & AI Agents:</strong> Building workflows and intelligent solutions that reduce manual work and improve efficiency.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h3 style="color:var(--accent-cyan);margin-bottom:1.75rem;display:flex;align-items:center;gap:0.75rem;">
+                        <i class="fas fa-graduation-cap"></i> <span data-key="eduSectionTitle">Education</span>
+                    </h3>
+                    <div class="education-card animate-on-scroll fade-in-up">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div>
+                            <span class="edu-badge-year">2022 — 2026</span>
+                            <h4 style="font-size:1.3rem;margin-bottom:0.25rem;" data-key="eduUni">Menoufia National University</h4>
+                            <p style="color:var(--accent-cyan);font-weight:600;margin-bottom:0.25rem;" data-key="eduFaculty">Faculty of Computers and Artificial Intelligence</p>
+                            <p style="color:var(--text-dark-primary);font-weight:500;margin-bottom:1rem;" data-key="eduMajor">IoT and Big Data Analysis</p>
+                            <p style="color:var(--text-dark-muted);font-size:0.95rem;line-height:1.6;" data-key="eduDesc">
+                                My academic background gave me a foundation in data analysis, programming, databases, artificial intelligence, IoT, and working with large datasets while developing practical problem-solving skills through technical projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 9. WHAT MAKES ME DIFFERENT ========== -->
+    <section class="about section">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="diffTitle">What Makes Me Different</h2>
+            <div class="cards-grid-4">
+                <!-- Card 1 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-link"></i></div>
+                    <h4 class="value-card-title" data-key="diff1Title">Data Meets Automation</h4>
+                    <p class="value-card-desc" data-key="diff1Desc">
+                        I do not treat data analysis and automation as separate services. I connect them to help businesses move from understanding what happened to taking action.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4 class="value-card-title" data-key="diff2Title">Business First</h4>
+                    <p class="value-card-desc" data-key="diff2Desc">
+                        I focus on the problem and the outcome before choosing the technology.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-cogs"></i></div>
+                    <h4 class="value-card-title" data-key="diff3Title">Practical Solutions</h4>
+                    <p class="value-card-desc" data-key="diff3Desc">
+                        My goal is to build solutions that can actually be used in everyday work, not just impressive demos.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-comments"></i></div>
+                    <h4 class="value-card-title" data-key="diff4Title">Clear Communication</h4>
+                    <p class="value-card-desc" data-key="diff4Desc">
+                        I keep the process simple, clear, and easy to follow from the first discussion to final delivery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 11. FEATURED WORK (PROJECTS) ========== -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="projectsTitle">Featured Work</h2>
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="projectsSubtitle">
+                Selected client and portfolio projects showcasing end-to-end data analytics and business value.
+            </p>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- REAL Project 1: Power BI Fitness Dashboard -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openVideoModal()">
+                        <video class="project-img" src="fitness-dashboard.mp4#t=1" preload="metadata" muted style="pointer-events:none;"></video>
+                        <!-- Play Button Overlay -->
+                        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,26,0.35);transition:0.3s;">
+                            <div style="width:70px;height:70px;border-radius:50%;background:rgba(79,70,229,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(79,70,229,0.5);transition:0.3s;">
+                                <i class="fas fa-play" style="color:white;font-size:1.5rem;margin-left:4px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projRealCat">Data Analysis</span>
+                        <h4 class="project-title" data-key="projRealTitle">Fitness & Membership Analytics Dashboard</h4>
+                        <p class="project-desc" data-key="projRealDesc">
+                            <strong>Challenge:</strong> Fragmented fitness center data with manual reporting.<br>
+                            <strong>Solution:</strong> Power BI dashboard with automated KPI tracking, membership tier analytics, and health calculators.<br>
+                            <strong>Business Value:</strong> Eliminated manual reporting, sped up management decisions, 360° performance view.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Data Modeling</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REAL Project 2: Hospital Emergency Room Dashboard -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('hospital-er-dashboard.jpg', 'https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY')">
+                        <img class="project-img" src="hospital-er-dashboard.jpg" alt="Hospital Emergency Room Dashboard">
+                        <div class="project-overlay">
+                            <span class="project-link" aria-label="Zoom Image"><i class="fas fa-search-plus"></i></span>
+                            <a href="https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY" target="_blank" onclick="event.stopPropagation();" class="project-link" aria-label="View on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projERCat">Healthcare Analytics</span>
+                        <h4 class="project-title" data-key="projERTitle">Hospital Emergency Room Dashboard</h4>
+                        <p class="project-desc" data-key="projERDesc">
+                            <strong>Challenge:</strong> Long emergency room wait times and tracking peak intake hours.<br>
+                            <strong>Solution:</strong> Comprehensive operational dashboard tracking 471 patients, wait times (34.1 min), and satisfaction (5.31/10).<br>
+                            <strong>Business Value:</strong> Enabled real-time performance monitoring and data-driven patient intake optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 12. WHY WORK WITH ME ========== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="whyTitle">Why Work With Me</h2>
+            <div class="cards-grid-4">
+                <!-- Card 1 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-check-double"></i></div>
+                    <h4 class="value-card-title" data-key="why1Title">Accurate</h4>
+                    <p class="value-card-desc" data-key="why1Desc">
+                        Focused on clean, organized, and reliable results that stakeholders can trust without second guessing.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-tools"></i></div>
+                    <h4 class="value-card-title" data-key="why2Title">Practical</h4>
+                    <p class="value-card-desc" data-key="why2Desc">
+                        Solutions designed around real needs rather than unnecessary complexity or tech buzzwords.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h4 class="value-card-title" data-key="why3Title">Efficient</h4>
+                    <p class="value-card-desc" data-key="why3Desc">
+                        Using automation where it can genuinely save time, eliminate human errors, and free up manual effort.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4 class="value-card-title" data-key="why4Title">Business Focused</h4>
+                    <p class="value-card-desc" data-key="why4Desc">
+                        Looking beyond the technical side to understand how each report and workflow directly creates bottom-line value.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ========== 13. CALL TO ACTION BANNER ========== -->
+            <div class="pre-contact-cta animate-on-scroll fade-in-up">
+                <h3 data-key="ctaQuestion">Have data you are not getting enough value from? Or repetitive work you want to automate?</h3>
+                <p data-key="ctaSubtitle">Let’s turn it into a practical solution.</p>
+                <a href="#contact" class="btn btn-primary" data-key="ctaButton">
+                    <i class="fas fa-comment-dots" style="margin-right:8px;"></i> Start a Conversation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 14. CONTACT ========== -->
+    <section class="about section" id="contact">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="contactTitle">Let’s Connect</h2>
+            <div class="contact-container" style="margin-top: 2rem;">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4 data-key="contactEmail">Email</h4>
+                            <p><a href="mailto:youssefahmed357402@gmail.com" style="color:var(--accent-cyan);">youssefahmed357402@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4 data-key="contactPhone">Phone / WhatsApp</h4>
+                            <p><a href="https://wa.me/201008168639" target="_blank" style="color:var(--accent-cyan);dir:ltr;">01008168639</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/youssef-ahmed-zeus" target="_blank" style="color:var(--accent-cyan);">linkedin.com/in/youssef-ahmed-zeus</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-store"></i></div>
+                        <div class="contact-details">
+                            <h4 data-key="contactKhamsat">Khamsat</h4>
+                            <p><a href="https://khamsat.com/user/software_house" target="_blank" style="color:var(--accent-cyan);">khamsat.com/user/software_house</a></p>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn QR Code Card -->
+                    <div class="qr-card">
+                        <img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.linkedin.com/in/youssef-ahmed-zeus" alt="LinkedIn QR Code">
+                        <span style="font-size:0.85rem;font-weight:600;color:var(--accent-cyan);" data-key="qrCaption">Scan to connect on LinkedIn</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" required>
+                        <label for="name" class="form-label" data-key="formName">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" required>
+                        <label for="email" class="form-label" data-key="formEmail">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <label for="message" class="form-label" data-key="formMessage">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" data-key="formSubmit">
+                        <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Send Message
+                    </button>
+                    <div id="formStatus" style="margin-top:1rem;text-align:center;display:none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO MODAL ========== -->
+    <div id="videoModal" style="
+        display:none;position:fixed;inset:0;z-index:9999;
+        background:rgba(0,0,0,0.92);align-items:center;justify-content:center;
+        backdrop-filter:blur(8px);cursor:pointer;
+    " onclick="closeVideoModal()">
+        <!-- Close Button -->
+        <button style="
+            position:absolute;top:1.5rem;right:1.5rem;width:45px;height:45px;
+            border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);
+            color:white;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;
+            justify-content:center;z-index:10000;transition:0.3s;
+        " onmouseenter="this.style.background='rgba(239,68,68,0.8)'" onmouseleave="this.style.background='rgba(255,255,255,0.1)'"
+        onclick="closeVideoModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <!-- Video Player -->
+        <video id="modalVideo" src="fitness-dashboard.mp4" controls
+            style="max-width:90%;max-height:85vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);cursor:default;"
+            onclick="event.stopPropagation();">
+        </video>
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/posts/youssef-ahmed-zeus_powerbi-dataanalytics-businessintelligence-activity-7370841164167663616-I90i" 
+           target="_blank" onclick="event.stopPropagation();"
+           style="position:absolute;bottom:1.5rem;right:1.5rem;background:var(--gradient-primary);
+           color:white;padding:0.6rem 1.5rem;border-radius:2rem;font-weight:600;
+           font-size:0.9rem;display:flex;align-items:center;gap:0.5rem;text-decoration:none;
+           transition:0.3s;box-shadow:var(--shadow-glow);"
+           onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
+            <i class="fab fa-linkedin-in"></i> View on LinkedIn
+        </a>
+    </div>
+
+    <!-- ========== IMAGE MODAL ========== -->
+    <div id="imageModal" style="
+        display:none;position:fixed;inset:0;z-index:9999;
+        background:rgba(0,0,0,0.92);align-items:center;justify-content:center;
+        backdrop-filter:blur(8px);cursor:pointer;
+    " onclick="closeImageModal()">
+        <!-- Close Button -->
+        <button style="
+            position:absolute;top:1.5rem;right:1.5rem;width:45px;height:45px;
+            border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);
+            color:white;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;
+            justify-content:center;z-index:10000;transition:0.3s;
+        " onmouseenter="this.style.background='rgba(239,68,68,0.8)'" onmouseleave="this.style.background='rgba(255,255,255,0.1)'"
+        onclick="closeImageModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <!-- Modal Image Container -->
+        <div onclick="event.stopPropagation();" style="max-width:92%;max-height:85vh;display:flex;flex-direction:column;align-items:center;position:relative;">
+            <img id="modalImg" src="hospital-er-dashboard.jpg" alt="Dashboard Preview"
+                style="max-width:100%;max-height:80vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);object-fit:contain;cursor:default;">
+        </div>
+        <!-- LinkedIn Link -->
+        <a id="imageModalLink" href="https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY" 
+           target="_blank" onclick="event.stopPropagation();"
+           style="position:absolute;bottom:1.5rem;right:1.5rem;background:var(--gradient-primary);
+           color:white;padding:0.6rem 1.5rem;border-radius:2rem;font-weight:600;
+           font-size:0.9rem;display:flex;align-items:center;gap:0.5rem;text-decoration:none;
+           transition:0.3s;box-shadow:var(--shadow-glow);"
+           onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
+            <i class="fab fa-linkedin-in"></i> View on LinkedIn
+        </a>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/youssef-ahmed-zeus" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/201008168639" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://khamsat.com/user/software_house" target="_blank" class="social-link" aria-label="Khamsat"><i class="fas fa-store"></i></a>
+                <a href="mailto:youssefahmed357402@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright" data-key="footerCopy">&copy; 2024 Youssef Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" style="
+        position:fixed;bottom:2rem;right:2rem;width:50px;height:50px;border-radius:50%;
+        background:var(--gradient-primary);color:white;border:none;cursor:pointer;
+        display:none;align-items:center;justify-content:center;font-size:1.25rem;
+        box-shadow:var(--shadow-glow);z-index:999;transition:var(--transition-bounce);
+    "><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+    (function() {
+        'use strict';
+
+        // ============================================================
+        // TRANSLATIONS (Complete Bilingual Dictionary for all 14 points)
+        // ============================================================
+        const translations = {
+            en: {
+                logoName: "Y.Ahmed",
+                navAbout: "About",
+                navWhatIDo: "What I Do",
+                navApproach: "Approach",
+                navSkills: "Skills",
+                navProjects: "Featured Work",
+                navContact: "Contact",
+
+                // 1. Hero
+                heroGreeting: "👋 Hello, I'm",
+                heroName: "Youssef Ahmed",
+                heroTitle: "Data Analyst & AI Agent Developer",
+                heroSubtitle: "Turning data into clear insights and repetitive tasks into smart automation",
+                heroCTA1: '<i class="fas fa-handshake" style="margin-right:8px;"></i> Let’s Work Together',
+                heroCTA2: '<i class="fas fa-folder-open" style="margin-right:8px;"></i> View Featured Work',
+
+                // 2. About Me
+                aboutTitle: "About Me",
+                aboutSubtitle: "Connecting Data Analysis with Smart Automation",
+                aboutBio: "I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation, so I do not just show what the data says—I help turn those insights into dashboards, workflows, and intelligent solutions that create real business value.",
+                brandHighlight: "I connect Data Analysis with Automation",
+                statExp: "Years Experience",
+                statProjects: "Projects Done",
+                statClients: "Happy Clients",
+
+                // 3. Journey
+                journeyTitle: "My Journey",
+                journeyText: "I started my journey with a simple curiosity about what numbers could reveal beyond the surface. Over time, that curiosity grew into a passion for analyzing information, solving real problems, and finding smarter ways to work. As I explored Python, Power BI, Excel, and AI Agents, I discovered that the real value is not in the tools themselves, but in how they can work together to turn information into action.",
+
+                // 4. What I Do
+                whatIDoTitle: "What I Do",
+                service1Title: "Data Analysis",
+                service1Desc: "Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make better decisions.",
+                service2Title: "Power BI Dashboards",
+                service2Desc: "Building interactive dashboards, KPI reports, and visualizations that make business performance easy to understand and monitor.",
+                service3Title: "Excel Solutions",
+                service3Desc: "Cleaning, organizing, analyzing, and automating data to create reliable reports and practical everyday business solutions.",
+                service4Title: "AI Agents & Automation",
+                service4Desc: "Building practical AI Agents and automated workflows that reduce repetitive work, save time, and dramatically improve business efficiency.",
+
+                // 5. Approach
+                approachTitle: "My Approach",
+                approachSubtitle: "A structured, problem-first methodology that focuses on outcomes, not just tools.",
+                step1Title: "Understand",
+                step1Desc: "I start by understanding the real business problem before choosing the tools.",
+                step2Title: "Analyze",
+                step2Desc: "I organize and analyze the available data to identify what really matters.",
+                step3Title: "Build",
+                step3Desc: "I turn the insights into dashboards, reports, automations, or AI-powered solutions that can be used in real work.",
+
+                // 6. Skills
+                skillsTitle: "Skills & Technologies",
+                skillGroup1Title: "Data Analytics",
+                skillGroup1Desc: "Core analytics stack for data wrangling, modeling, and business intelligence:",
+                skillGroup2Title: "AI & Automation",
+                skillGroup2Desc: "Building intelligent agents, automated workflows, and connected systems:",
+                skillGroup3Title: "Tools & Competencies",
+                skillGroup3Desc: "Practical tools and methods applied directly to client and business projects:",
+
+                // 10. USP
+                uspBadge: "Personal Vision & Promise",
+                uspStatement: "“From raw data to clear decisions. From repetitive work to smart automation.”",
+
+                // 7. Experience
+                expSectionTitle: "Experience",
+                expJobTitle: "Freelance Data Analyst & AI Agent Developer",
+                expType: "Freelance",
+                expSummary: "Helping businesses and individuals analyze data, build dashboards, automate repetitive tasks, and develop practical AI-powered solutions based on their needs.",
+                expPoint1: "<strong>Data Analysis & Reporting:</strong> Turning raw data into organized reports and useful business insights.",
+                expPoint2: "<strong>Dashboards:</strong> Creating clear interactive dashboards for monitoring KPIs and performance.",
+                expPoint3: "<strong>Automation & AI Agents:</strong> Building workflows and intelligent solutions that reduce manual work and improve efficiency.",
+
+                // 8. Education
+                eduSectionTitle: "Education",
+                eduUni: "Menoufia National University",
+                eduFaculty: "Faculty of Computers and Artificial Intelligence",
+                eduMajor: "IoT and Big Data Analysis",
+                eduDesc: "My academic background gave me a foundation in data analysis, programming, databases, artificial intelligence, IoT, and working with large datasets while developing practical problem-solving skills through technical projects.",
+
+                // 9. What Makes Me Different
+                diffTitle: "What Makes Me Different",
+                diff1Title: "Data Meets Automation",
+                diff1Desc: "I do not treat data analysis and automation as separate services. I connect them to help businesses move from understanding what happened to taking action.",
+                diff2Title: "Business First",
+                diff2Desc: "I focus on the problem and the outcome before choosing the technology.",
+                diff3Title: "Practical Solutions",
+                diff3Desc: "My goal is to build solutions that can actually be used in everyday work, not just impressive demos.",
+                diff4Title: "Clear Communication",
+                diff4Desc: "I keep the process simple, clear, and easy to follow from the first discussion to final delivery.",
+
+                // 11. Projects
+                projectsTitle: "Featured Work",
+                projectsSubtitle: "Selected client and portfolio projects showcasing end-to-end data analytics and business value.",
+                projRealCat: "Data Analysis",
+                projRealTitle: "Fitness & Membership Analytics Dashboard",
+                projRealDesc: "<strong>Challenge:</strong> Fragmented fitness center data with manual reporting.<br><strong>Solution:</strong> Power BI dashboard with automated KPI tracking, membership tier analytics, and health calculators.<br><strong>Business Value:</strong> Eliminated manual reporting, sped up management decisions, 360° performance view.",
+                projERCat: "Healthcare Analytics",
+                projERTitle: "Hospital Emergency Room Dashboard",
+                projERDesc: "<strong>Challenge:</strong> Long emergency room wait times and tracking peak intake hours.<br><strong>Solution:</strong> Comprehensive operational dashboard tracking 471 patients, wait times (34.1 min), and satisfaction (5.31/10).<br><strong>Business Value:</strong> Enabled real-time performance monitoring and data-driven patient intake optimization.",
+
+                // 12. Why Work With Me
+                whyTitle: "Why Work With Me",
+                why1Title: "Accurate",
+                why1Desc: "Focused on clean, organized, and reliable results that stakeholders can trust without second guessing.",
+                why2Title: "Practical",
+                why2Desc: "Solutions designed around real needs rather than unnecessary complexity or tech buzzwords.",
+                why3Title: "Efficient",
+                why3Desc: "Using automation where it can genuinely save time, eliminate human errors, and free up manual effort.",
+                why4Title: "Business Focused",
+                why4Desc: "Looking beyond the technical side to understand how each report and workflow directly creates bottom-line value.",
+
+                // 13. Pre-Contact CTA
+                ctaQuestion: "Have data you are not getting enough value from? Or repetitive work you want to automate?",
+                ctaSubtitle: "Let’s turn it into a practical solution.",
+                ctaButton: '<i class="fas fa-comment-dots" style="margin-right:8px;"></i> Start a Conversation',
+
+                // 14. Contact
+                contactTitle: "Let’s Connect",
+                contactEmail: "Email",
+                contactPhone: "Phone / WhatsApp",
+                contactKhamsat: "Khamsat",
+                qrCaption: "Scan to connect on LinkedIn",
+                formName: "Your Name",
+                formEmail: "Your Email",
+                formMessage: "Your Message",
+                formSubmit: '<i class="fas fa-paper-plane" style="margin-right:8px;"></i> Send Message',
+                footerCopy: "&copy; 2024 Youssef Ahmed. All rights reserved.",
+                formSuccess: "✅ Message sent successfully! I'll get back to you soon.",
+            },
+            ar: {
+                logoName: "ي.أحمد",
+                navAbout: "عنّي",
+                navWhatIDo: "ما أقدمه",
+                navApproach: "منهجية العمل",
+                navSkills: "المهارات",
+                navProjects: "أبرز الأعمال",
+                navContact: "تواصل معي",
+
+                // 1. Hero
+                heroGreeting: "👋 مرحباً، أنا",
+                heroName: "يوسف أحمد",
+                heroTitle: "محلل بيانات ومطور AI Agents",
+                heroSubtitle: "تحويل البيانات إلى رؤى واضحة والمهام الروتينية المتكررة إلى أتمتة ذكية",
+                heroCTA1: '<i class="fas fa-handshake" style="margin-left:8px;"></i> لنعمل معاً',
+                heroCTA2: '<i class="fas fa-folder-open" style="margin-left:8px;"></i> استعرض أعمالي',
+
+                // 2. About Me
+                aboutTitle: "عنّي",
+                aboutSubtitle: "الربط بين تحليل البيانات والأتمتة الذكية",
+                aboutBio: "أنا يوسف أحمد، محلل بيانات ومطور وكلاء ذكاء اصطناعي (AI Agents) أركز على مساعدة الشركات وأصحاب الأعمال في اتخاذ قرارات أفضل والعمل بكفاءة أعلى. ما يميزني هو طريقتي في ربط تحليل البيانات بالأتمتة العملية؛ فأنا لا أكتفي بإظهار ما تقوله الأرقام، بل أساعد في تحويل تلك الرؤى إلى لوحات تحكم وتدفقات عمل وحلول ذكية تصنع قيمة تجارية حقيقية.",
+                brandHighlight: "أربط بين تحليل البيانات والأتمتة العملية",
+                statExp: "سنوات الخبرة",
+                statProjects: "مشروع منجز",
+                statClients: "عميل سعيد",
+
+                // 3. Journey
+                journeyTitle: "رحلتي وشغفي",
+                journeyText: "بدأت رحلتي بفضول بسيط حول ما يمكن أن تكشفه الأرقام وراء ما يبدو على السطح. بمرور الوقت، تحول هذا الفضول إلى شغف عميق بتحليل المعلومات، وحل المشكلات الواقعية، وإيجاد طرق أذكى لإنجاز العمل. ومع تعمقي في Python و Power BI و Excel و AI Agents، أدركت أن القيمة الحقيقية لا تكمن في الأدوات نفسها، بل في كيفية عملها معاً لتحويل المعلومات إلى خطوات وإجراءات فعلية.",
+
+                // 4. What I Do
+                whatIDoTitle: "ما أقدمه",
+                service1Title: "تحليل البيانات",
+                service1Desc: "تحويل البيانات الخام والمعقدة إلى رؤى واضحة وقابلة للتنفيذ تساعد الشركات على فهم الأداء واتخاذ قرارات أدق.",
+                service2Title: "لوحات تحكم Power BI",
+                service2Desc: "بناء لوحات تحكم تفاعلية، وتقارير مؤشرات أداء (KPIs)، ورسوم بيانية تجعل متابعة أداء العمل أمراً سهلاً وسريعاً.",
+                service3Title: "حلول Excel المتقدمة",
+                service3Desc: "تنظيف وتنظيم وتحليل وأتمتة البيانات لإنشاء تقارير موثوقة وحلول عملية لأعمالك اليومية.",
+                service4Title: "وكلاء الذكاء الاصطناعي والأتمتة",
+                service4Desc: "بناء وكلاء AI عمليين وتدفقات عمل مؤتمتة تقلل من المهام المتكررة، وتوفر الوقت، وترفع الإنتاجية بشكل ملحوظ.",
+
+                // 5. Approach
+                approachTitle: "منهجية العمل (My Approach)",
+                approachSubtitle: "منهجية منظمة تبدأ بفهم مشكلة العمل الحقيقية وتركز على النتيجة وليس فقط على الأدوات.",
+                step1Title: "1. الفهم (Understand)",
+                step1Desc: "أبدأ بفهم مشكلة العمل الحقيقية وأهدافها بدقة قبل اختيار أي أداة.",
+                step2Title: "2. التحليل (Analyze)",
+                step2Desc: "أقوم بتنظيم وفحص البيانات المتاحة وتحديد ما يهم العمل فعلياً.",
+                step3Title: "3. البناء (Build)",
+                step3Desc: "أحول الرؤى إلى لوحات تحكم، أو تقارير، أو عمليات أتمتة، أو حلول مدعومة بالذكاء الاصطناعي قابلة للاستخدام اليومي.",
+
+                // 6. Skills
+                skillsTitle: "المهارات والتقنيات",
+                skillGroup1Title: "تحليل البيانات",
+                skillGroup1Desc: "الأدوات الأساسية لتنظيم البيانات ونمذجتها وذكاء الأعمال:",
+                skillGroup2Title: "الذكاء الاصطناعي والأتمتة",
+                skillGroup2Desc: "بناء الوكلاء الأذكياء وتدفقات العمل والأنظمة المترابطة:",
+                skillGroup3Title: "الأدوات والكفاءات العملية",
+                skillGroup3Desc: "أدوات وممارسات تطبيقية لحل مشاكل المشروعات الحقيقية:",
+
+                // 10. USP
+                uspBadge: "الرؤية والوعد الشخصي",
+                uspStatement: "“من بيانات خام إلى قرارات واضحة.. ومن مهام مكررة إلى أتمتة ذكية.”",
+
+                // 7. Experience
+                expSectionTitle: "الخبرة المهنية",
+                expJobTitle: "محلل بيانات حر ومطور AI Agents",
+                expType: "عمل حر (Freelance)",
+                expSummary: "مساعدة الشركات والأفراد في تحليل البيانات، وبناء لوحات التحكم، وأتمتة المهام الروتينية، وتطوير حلول عملية مدعومة بالذكاء الاصطناعي وفق احتياجاتهم الخاصة.",
+                expPoint1: "<strong>تحليل البيانات والتقارير:</strong> تحويل البيانات الخام إلى تقارير منظمة ورؤى تدعم نمو الأعمال.",
+                expPoint2: "<strong>لوحات التحكم التفاعلية:</strong> تصميم داشبوردات ذكية لمراقبة مؤشرات الأداء ومتابعة النمو لحظياً.",
+                expPoint3: "<strong>الأتمتة ووكلاء الذكاء الاصطناعي:</strong> بناء تدفقات عمل وأنظمة ذكية تختصر الجهد اليدوي وترفع الكفاءة.",
+
+                // 8. Education
+                eduSectionTitle: "التعليم الأكاديمي",
+                eduUni: "جامعة المنوفية الأهلية",
+                eduFaculty: "كلية الحاسبات والذكاء الاصطناعي",
+                eduMajor: "إنترنت الأشياء وتحليل البيانات الضخمة (IoT & Big Data Analysis)",
+                eduDesc: "منحتني دراستي الأكاديمية أساساً متيناً في تحليل البيانات، البرمجة، قواعد البيانات، الذكاء الاصطناعي، وإنترنت الأشياء والتعامل مع مجموعات البيانات الكبيرة، بالإضافة إلى صقل مهارات حل المشكلات العملية من خلال المشاريع التقنية.",
+
+                // 9. What Makes Me Different
+                diffTitle: "ما يميزني عن غيري",
+                diff1Title: "البيانات تلتقي بالأتمتة",
+                diff1Desc: "لا أتعامل مع تحليل البيانات والأتمتة كخدمات منفصلة؛ بل أربطهما لمساعدة الشركة على الانتقال من مجرد فهم ما حدث إلى اتخاذ إجراء فوري.",
+                diff2Title: "الأعمال أولاً",
+                diff2Desc: "أركز على المشكلة والنتيجة المطلوبة قبل اختيار التقنية.",
+                diff3Title: "حلول عملية للاستخدام",
+                diff3Desc: "هدفي هو بناء حلول يمكن استخدامها فعلياً في العمل اليومي وليس مجرد عروض تقنية مبهرة شكلياً.",
+                diff4Title: "تواصل واضح وبسيط",
+                diff4Desc: "أحافظ على بساطة ووضوح كل خطوة من المناقشة الأولى حتى التسليم النهائي.",
+
+                // 11. Projects
+                projectsTitle: "أبرز الأعمال (Featured Work)",
+                projectsSubtitle: "مشاريع حقيقية توضح كيفية تحويل البيانات إلى قيمة تجارية ملموسة.",
+                projRealCat: "تحليل بيانات",
+                projRealTitle: "لوحة تحليلات اللياقة والعضويات",
+                projRealDesc: "<strong>التحدي:</strong> تشتت بيانات صالات اللياقة والاعتماد على التقارير اليدوية.<br><strong>الحل:</strong> لوحة تحكم Power BI مع تتبع آلي لمؤشرات الأداء، وتحليل العضويات وحاسبات الصحة.<br><strong>القيمة المضافة:</strong> القضاء على التقارير اليدوية، وتسريع القرارات الإدارية، ورؤية شاملة 360° للأداء.",
+                projERCat: "تحليلات الرعاية الصحية",
+                projERTitle: "لوحة تحكم قسم طوارئ المستشفى",
+                projERDesc: "<strong>التحدي:</strong> طول أوقات انتظار المرضى وصعوبة تتبع أوقات الذروة الاستيعابية.<br><strong>الحل:</strong> داشبورد عملياتي شامل لتتبع 471 مريضاً، وأوقات الانتظار (34.1 دقيقة)، ومعدل الرضا (5.31/10).<br><strong>القيمة المضافة:</strong> مراقبة الأداء التشغيلي لحظياً واتخاذ قرارات مدروسة لتحسين تجربة المرضى.",
+
+                // 12. Why Work With Me
+                whyTitle: "لماذا تختار العمل معي؟",
+                why1Title: "دقة وموثوقية (Accurate)",
+                why1Desc: "تركيز كامل على نتائج نظيفة ومنظمة وموثوقة يمكن لأصحاب القرار الاعتماد عليها بثقة تامة.",
+                why2Title: "حلول عملية (Practical)",
+                why2Desc: "حلول مصممة حول الاحتياجات الحقيقية بعيداً عن التعقيد الزائد أو المسميات التقنية المعقدة.",
+                why3Title: "كفاءة عالية (Efficient)",
+                why3Desc: "استثمار الأتمتة حيثما توفر الوقت فعلياً، وتقضي على الأخطاء البشرية، وتوفر الجهد اليدوي.",
+                why4Title: "تركيز على قيمة العمل (Business Focused)",
+                why4Desc: "النظر إلى ما وراء الجانب التقني لفهم كيف يسهم كل تقرير وتدفق عمل في تعزيز أرباح ونمو النشاط التجاري.",
+
+                // 13. Pre-Contact CTA
+                ctaQuestion: "هل لديك بيانات لا تستفيد منها بالشكل الكافي؟ أو مهام مكررة ترغب في أتمتتها؟",
+                ctaSubtitle: "دعنا نحولها إلى حل عملي ذكي ومجدٍ.",
+                ctaButton: '<i class="fas fa-comment-dots" style="margin-left:8px;"></i> ابدأ محادثة الآن',
+
+                // 14. Contact
+                contactTitle: "لنتواصل معاً",
+                contactEmail: "البريد الإلكتروني",
+                contactPhone: "الهاتف / واتساب",
+                contactKhamsat: "خمسات",
+                qrCaption: "امسح الرمز للتواصل عبر LinkedIn",
+                formName: "اسمك الكريم",
+                formEmail: "بريدك الإلكتروني",
+                formMessage: "تفاصيل رسالتك أو مشروعك",
+                formSubmit: '<i class="fas fa-paper-plane" style="margin-left:8px;"></i> إرسال الرسالة',
+                footerCopy: "&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة.",
+                formSuccess: "✅ تم إرسال رسالتك بنجاح! سأتواصل معك في أقرب وقت.",
+            }
+        };
+
+        let currentLang = 'en';
+        let isDark = true;
+
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        const langToggle = document.getElementById('langToggle');
+        const themeToggle = document.getElementById('themeToggle');
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        // ============================================================
+        // LANGUAGE TOGGLE
+        // ============================================================
+        function setLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+            const htmlEl = document.documentElement;
+
+            if (lang === 'ar') {
+                htmlEl.setAttribute('dir', 'rtl');
+                htmlEl.setAttribute('lang', 'ar');
+                document.body.classList.add('rtl');
+                langToggle.innerHTML = '<span style="font-weight:700; font-size: 0.85rem;">EN</span>';
+            } else {
+                htmlEl.setAttribute('dir', 'ltr');
+                htmlEl.setAttribute('lang', 'en');
+                document.body.classList.remove('rtl');
+                langToggle.innerHTML = '<span style="font-weight:700; font-size: 0.85rem;">AR</span>';
+            }
+
+            // Update all translatable elements
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (t[key]) {
+                    el.innerHTML = t[key];
+                }
+            });
+
+            document.title = lang === 'ar' 
+                ? 'يوسف أحمد | محلل بيانات ومطور وكلاء ذكاء اصطناعي' 
+                : 'Youssef Ahmed | Data Analyst & AI Agent Developer';
+        }
+
+        langToggle.addEventListener('click', () => {
+            setLanguage(currentLang === 'en' ? 'ar' : 'en');
+        });
+
+        // ============================================================
+        // THEME TOGGLE
+        // ============================================================
+        function setTheme(dark) {
+            isDark = dark;
+            if (dark) {
+                document.body.classList.remove('light-mode');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                document.body.classList.add('light-mode');
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            setTheme(false);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            setTheme(!isDark);
+        });
+
+        // ============================================================
+        // MOBILE MENU
+        // ============================================================
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // ============================================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================================
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+
+            highlightNav();
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        function highlightNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPos = window.scrollY + 150;
+
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                const id = section.getAttribute('id');
+                const link = document.querySelector(`.nav-link[href="#${id}"]`);
+
+                if (link) {
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                }
+            });
+        }
+
+        // ============================================================
+        // SCROLL ANIMATIONS (INTERSECTION OBSERVER)
+        // ============================================================
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+
+                    const counters = entry.target.querySelectorAll('.stat-number[data-count]');
+                    counters.forEach(counter => {
+                        animateCounter(counter);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('#about').forEach(section => {
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.querySelectorAll('.stat-number[data-count]').forEach(counter => {
+                            animateCounter(counter);
+                        });
+                    }
+                });
+            }, { threshold: 0.2 });
+            sectionObserver.observe(section);
+        });
+
+        function animateCounter(el) {
+            if (el.dataset.animated) return;
+            el.dataset.animated = 'true';
+            const target = parseInt(el.getAttribute('data-count'));
+            const suffix = '+';
+            let current = 0;
+            const increment = Math.ceil(target / 50);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = current + suffix;
+            }, 30);
+        }
+
+        // ============================================================
+        // CONTACT FORM
+        // ============================================================
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const t = translations[currentLang];
+            formStatus.style.display = 'block';
+            formStatus.innerHTML = t.formSuccess;
+            formStatus.style.color = '#10b981';
+            contactForm.reset();
+            setTimeout(() => { formStatus.style.display = 'none'; }, 6000);
+        });
+
+        // ============================================================
+        // CANVAS PARTICLES
+        // ============================================================
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animFrameId;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;';
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = isDark 
+                    ? `rgba(79, 70, 229, ${this.opacity})` 
+                    : `rgba(79, 70, 229, ${this.opacity * 0.5})`;
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            const count = Math.min(80, Math.floor(canvas.width * canvas.height / 15000));
+            particles = [];
+            for (let i = 0; i < count; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        const opacity = (1 - dist / 120) * 0.15;
+                        ctx.strokeStyle = isDark 
+                            ? `rgba(124, 58, 237, ${opacity})` 
+                            : `rgba(79, 70, 229, ${opacity * 0.5})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            connectParticles();
+            animFrameId = requestAnimationFrame(animateParticles);
+        }
+
+        initParticles();
+        animateParticles();
+
+        // ============================================================
+        // TYPING EFFECT
+        // ============================================================
+        const typingEl = document.querySelector('#typingText h2');
+        const titles = {
+            en: ['Data Analyst', 'AI Agent Developer', 'Power BI Specialist', 'Automation Architect'],
+            ar: ['محلل بيانات', 'مطور AI Agents', 'متخصص Power BI', 'مهندس أتمتة']
+        };
+        let titleIdx = 0;
+        let charIdx = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function typeEffect() {
+            const currentTitles = titles[currentLang];
+            const currentTitle = currentTitles[titleIdx % currentTitles.length];
+
+            if (isDeleting) {
+                typingEl.textContent = currentTitle.substring(0, charIdx - 1);
+                charIdx--;
+                typeSpeed = 45;
+            } else {
+                typingEl.textContent = currentTitle.substring(0, charIdx + 1);
+                charIdx++;
+                typeSpeed = 90;
+            }
+
+            if (!isDeleting && charIdx === currentTitle.length) {
+                typeSpeed = 2200;
+                isDeleting = true;
+            } else if (isDeleting && charIdx === 0) {
+                isDeleting = false;
+                titleIdx++;
+                typeSpeed = 450;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        setTimeout(typeEffect, 1200);
+
+    })();
+
+    // ============================================================
+    // MODAL FUNCTIONS (GLOBAL SCOPE)
+    // ============================================================
+    function openVideoModal() {
+        document.getElementById('videoModal').style.display = 'flex';
+        document.getElementById('modalVideo').play();
+    }
+
+    function closeVideoModal() {
+        document.getElementById('videoModal').style.display = 'none';
+        var vid = document.getElementById('modalVideo');
+        if (vid) {
+            vid.pause();
+            vid.currentTime = 0;
+        }
+    }
+
+    function openImageModal(imgSrc, linkedinUrl) {
+        var modal = document.getElementById('imageModal');
+        var img = document.getElementById('modalImg');
+        var link = document.getElementById('imageModalLink');
+        if (imgSrc && img) img.src = imgSrc;
+        if (linkedinUrl && link) link.href = linkedinUrl;
+        modal.style.display = 'flex';
+    }
+
+    function closeImageModal() {
+        var modal = document.getElementById('imageModal');
+        if (modal) modal.style.display = 'none';
+    }
+
+    // Close modals with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeVideoModal();
+            closeImageModal();
+        }
+    });
+    </script>
+
+</body>
+</html>
