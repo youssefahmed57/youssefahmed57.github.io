@@ -350,6 +350,33 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3: ApexML AutoML Platform -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="ml">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('apexml-platform.png', '')">
+                        <img class="project-img" src="apexml-platform.png" alt="ApexML — AutoML & Analytics Platform" style="object-position: left top;">
+                        <div class="project-overlay">
+                            <span class="project-link" aria-label="Zoom Image"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projApexCat">Machine Learning & AutoML</span>
+                        <h4 class="project-title" data-key="projApexTitle">ApexML — AutoML & Analytics Platform</h4>
+                        <p class="project-desc" data-key="projApexDesc">
+                            <strong>Challenge:</strong> Building end-to-end ML workflows requires repetitive data cleaning, manual feature engineering, model tuning, and complex inference pipelines.<br>
+                            <strong>Solution:</strong> Comprehensive AutoML web platform featuring instant dataset profiling, AI-guided smart preprocessing, interactive Plotly EDA, multi-model training studio, and batch inference.<br>
+                            <strong>Business Value:</strong> Accelerates the data science lifecycle from raw datasets to production-ready models by 80%, enabling rapid experimentation and high-accuracy predictions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">AutoML</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -835,6 +862,10 @@
                 projERCat: "Healthcare Analytics",
                 projERTitle: "Hospital Emergency Room Dashboard",
                 projERDesc: "<strong>Challenge:</strong> Unpredictable ER wait times and difficulty tracking peak intake bottlenecks.<br><strong>Solution:</strong> Operational analytics dashboard monitoring 471 patients, 34.1 min avg wait time, and satisfaction ratings.<br><strong>Business Value:</strong> Enabled medical directors to pinpoint peak hours and reduce patient wait times using live operational metrics.",
+                projApexCat: "Machine Learning & AutoML",
+                projApexTitle: "ApexML — AutoML & Analytics Platform",
+                projApexDesc: "<strong>Challenge:</strong> Building end-to-end ML workflows requires repetitive data cleaning, manual feature engineering, model tuning, and complex inference pipelines.<br><strong>Solution:</strong> Comprehensive AutoML web platform featuring instant dataset profiling, AI-guided smart preprocessing, interactive Plotly EDA, multi-model training studio, and batch inference.<br><strong>Business Value:</strong> Accelerates the data science lifecycle from raw datasets to production-ready models by 80%, enabling rapid experimentation and high-accuracy predictions.",
+
 
                 // 6. Skills
                 skillsTitle: "Skills & Technologies",
@@ -967,6 +998,10 @@
                 projERCat: "تحليلات الرعاية الصحية",
                 projERTitle: "لوحة تحكم قسم طوارئ المستشفى",
                 projERDesc: "<strong>التحدي:</strong> صعوبة توقع أوقات انتظار المرضى وتحديد أوقات الذروة والاختناق.<br><strong>الحل:</strong> داشبورد عملياتي شامل لتتبع 471 مريضاً، ومتوسط وقت الانتظار (34.1 دقيقة)، ومعدل الرضا.<br><strong>القيمة المضافة:</strong> مساعدة الإدارة الطبية على كشف ساعات الذروة لحظياً وتقليل فترات انتظار المرضى.",
+                projApexCat: "تعلم الآلة والذكاء الاصطناعي",
+                projApexTitle: "منصة ApexML لأتمتة تعلم الآلة والتحليلات",
+                projApexDesc: "<strong>التحدي:</strong> تتطلب مسارات تعلم الآلة التقليدية جهداً متكرراً ووقتاً طويلاً في تنظيف البيانات، وتجهيز المتغيرات، وضبط معايير النماذج، ونشر آليات التنبؤ.<br><strong>الحل:</strong> منصة AutoML تفاعلية متكاملة تشمل الفحص الفوري للبيانات، معالجة ذكية بالاقتراحات، تحليلاً بيانياً بـ Plotly، استوديو لتدريب ومقارنة النماذج، ونظام استدلال تنبؤي فوري ودفعي.<br><strong>القيمة المضافة:</strong> اختصار دورة بناء النماذج بنسبة 80%، وتمكين فرق العمل من الانتقال من البيانات الخام إلى نماذج إنتاجية عالية الدقة بقرارات مدعومة بالبيانات.",
+
 
                 // 6. Skills
                 skillsTitle: "المهارات والتقنيات",
@@ -1397,7 +1432,14 @@
         var img = document.getElementById('modalImg');
         var link = document.getElementById('imageModalLink');
         if (imgSrc && img) img.src = imgSrc;
-        if (linkedinUrl && link) link.href = linkedinUrl;
+        if (link) {
+            if (linkedinUrl && linkedinUrl.trim() !== '' && linkedinUrl !== '#') {
+                link.href = linkedinUrl;
+                link.style.display = 'flex';
+            } else {
+                link.style.display = 'none';
+            }
+        }
         modal.style.display = 'flex';
     }
 
