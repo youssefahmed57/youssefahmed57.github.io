@@ -436,17 +436,17 @@
                 <p style="color:var(--text-dark-muted);margin-bottom:1.5rem;font-size:1.05rem;" data-key="expSummary">
                     Partnering with businesses, founders, and teams to analyze operational data, construct executive dashboards, and implement practical automated workflows that eliminate human error and accelerate growth.
                 </p>
-                <ul style="display:flex;flex-direction:column;gap:1rem;">
+                <ul style="display:flex;flex-direction:column;gap:1rem;padding:0;margin:0;list-style:none;">
                     <li style="display:flex;align-items:flex-start;gap:0.75rem;">
-                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;"></i>
+                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;flex-shrink:0;"></i>
                         <span data-key="expPoint1"><strong>Actionable Business Intelligence:</strong> Designing intuitive KPI dashboards in Power BI and Excel that replace slow manual reporting with instant insights.</span>
                     </li>
                     <li style="display:flex;align-items:flex-start;gap:0.75rem;">
-                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;"></i>
+                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;flex-shrink:0;"></i>
                         <span data-key="expPoint2"><strong>Data Pipelines & Modeling:</strong> Cleaning, transforming, and connecting disparate data sources into dependable, scalable reporting architectures.</span>
                     </li>
                     <li style="display:flex;align-items:flex-start;gap:0.75rem;">
-                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;"></i>
+                        <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;font-size:1.1rem;flex-shrink:0;"></i>
                         <span data-key="expPoint3"><strong>Practical Automation:</strong> Building tailored AI agents and automated routines that eliminate repetitive daily friction and scale efficiency.</span>
                     </li>
                 </ul>
@@ -465,63 +465,90 @@
             <div class="education-grid">
                 <!-- 1. University -->
                 <div class="education-card animate-on-scroll fade-in-up">
-                    <div class="edu-header">
-                        <div class="edu-icon-box"><i class="fas fa-university"></i></div>
-                        <span class="edu-badge-year">2022 — 2026</span>
+                    <div class="edu-img-wrapper">
+                        <img src="edu-university.jpg" alt="Menoufia National University - Faculty of Computers & AI" class="edu-img">
+                        <div class="edu-img-overlay">
+                            <span class="edu-badge"><i class="fas fa-graduation-cap"></i> <span data-key="edu1Badge">Higher Education</span></span>
+                        </div>
                     </div>
-                    <h4 class="edu-title" data-key="edu1Title">Menoufia National University</h4>
-                    <p class="edu-inst" data-key="edu1Faculty">Faculty of Computers and Artificial Intelligence</p>
-                    <p style="color:var(--text-dark-primary);font-weight:600;font-size:0.95rem;margin-bottom:0.75rem;" data-key="edu1Major">IoT and Big Data Analysis</p>
-                    <p class="edu-desc" data-key="edu1Desc">
-                        Comprehensive academic foundation covering data structures, relational databases, artificial intelligence algorithms, IoT architectures, and high-volume dataset processing.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Computer Science</span>
-                        <span class="tech-tag">Big Data</span>
-                        <span class="tech-tag">AI</span>
-                        <span class="tech-tag">IoT</span>
+                    <div class="edu-body">
+                        <div class="edu-header">
+                            <div>
+                                <h4 class="edu-title" data-key="edu1Title">Menoufia National University</h4>
+                                <p class="edu-inst" data-key="edu1Faculty">Faculty of Computers and Artificial Intelligence</p>
+                            </div>
+                            <span class="edu-badge-year" data-key="edu1Year">2022 — 2026</span>
+                        </div>
+                        <p class="edu-major" data-key="edu1Major"><i class="fas fa-microchip"></i> IoT and Big Data Analysis</p>
+                        <p class="edu-desc" data-key="edu1Desc">
+                            Comprehensive academic foundation covering data structures, relational databases, artificial intelligence algorithms, IoT architectures, and high-volume dataset processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Science</span>
+                            <span class="tech-tag">Big Data</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 2. DEPI -->
                 <div class="education-card animate-on-scroll fade-in-up">
-                    <div class="edu-header">
-                        <div class="edu-icon-box"><i class="fas fa-chart-line"></i></div>
-                        <span class="edu-badge-year" data-key="depiBadge">MCIT Initiative</span>
+                    <div class="edu-img-wrapper">
+                        <img src="edu-depi.jpg" alt="Data Analysis Training - DEPI" class="edu-img">
+                        <div class="edu-img-overlay">
+                            <span class="edu-badge"><i class="fas fa-chart-line"></i> <span data-key="depiBadgeText">DEPI | MCIT</span></span>
+                        </div>
                     </div>
-                    <h4 class="edu-title" data-key="depiTitle">Data Analysis Training</h4>
-                    <p class="edu-inst" data-key="depiInst">Digital Egypt Pioneers Initiative (DEPI)</p>
-                    <p style="color:var(--text-dark-primary);font-weight:600;font-size:0.95rem;margin-bottom:0.75rem;" data-key="depiMajor">Advanced Data Analysis & Business Intelligence</p>
-                    <p class="edu-desc" data-key="depiDesc">
-                        Data preparation, analysis, visualization, dashboards and business insights using Excel, SQL, Python and Power BI.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">Dashboards</span>
+                    <div class="edu-body">
+                        <div class="edu-header">
+                            <div>
+                                <h4 class="edu-title" data-key="depiTitle">Data Analysis Training</h4>
+                                <p class="edu-inst" data-key="depiInst">Digital Egypt Pioneers Initiative (DEPI)</p>
+                            </div>
+                            <span class="edu-badge-year" data-key="depiYear">MCIT Initiative</span>
+                        </div>
+                        <p class="edu-major" data-key="depiMajor"><i class="fas fa-chart-pie"></i> Advanced Data Analysis & Business Intelligence</p>
+                        <p class="edu-desc" data-key="depiDesc">
+                            Data preparation, analysis, visualization, dashboards and business insights using Excel, SQL, Python and Power BI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Dashboards</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 3. NTI -->
                 <div class="education-card animate-on-scroll fade-in-up">
-                    <div class="edu-header">
-                        <div class="edu-icon-box"><i class="fas fa-brain"></i></div>
-                        <span class="edu-badge-year" data-key="ntiBadge">NTI Accredited</span>
+                    <div class="edu-img-wrapper">
+                        <img src="edu-nti.jpg" alt="Machine Learning Training - NTI" class="edu-img">
+                        <div class="edu-img-overlay">
+                            <span class="edu-badge"><i class="fas fa-brain"></i> <span data-key="ntiBadgeText">NTI Accredited</span></span>
+                        </div>
                     </div>
-                    <h4 class="edu-title" data-key="ntiTitle">Machine Learning Training</h4>
-                    <p class="edu-inst" data-key="ntiInst">National Telecommunication Institute (NTI)</p>
-                    <p style="color:var(--text-dark-primary);font-weight:600;font-size:0.95rem;margin-bottom:0.75rem;" data-key="ntiMajor">Applied Machine Learning & Model Deployment</p>
-                    <p class="edu-desc" data-key="ntiDesc">
-                        End-to-end Machine Learning, supervised and unsupervised learning, model evaluation, tuning and inference.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Supervised</span>
-                        <span class="tech-tag">Unsupervised</span>
-                        <span class="tech-tag">Evaluation</span>
-                        <span class="tech-tag">Tuning</span>
-                        <span class="tech-tag">Inference</span>
+                    <div class="edu-body">
+                        <div class="edu-header">
+                            <div>
+                                <h4 class="edu-title" data-key="ntiTitle">Machine Learning Training</h4>
+                                <p class="edu-inst" data-key="ntiInst">National Telecommunication Institute (NTI)</p>
+                            </div>
+                            <span class="edu-badge-year" data-key="ntiYear">NTI Accredited</span>
+                        </div>
+                        <p class="edu-major" data-key="ntiMajor"><i class="fas fa-network-wired"></i> Applied Machine Learning & Model Deployment</p>
+                        <p class="edu-desc" data-key="ntiDesc">
+                            End-to-end Machine Learning, supervised and unsupervised learning, model evaluation, tuning and inference.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Supervised</span>
+                            <span class="tech-tag">Unsupervised</span>
+                            <span class="tech-tag">Evaluation</span>
+                            <span class="tech-tag">Tuning</span>
+                            <span class="tech-tag">Inference</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -832,19 +859,23 @@
                 // 8. Education & Training
                 eduSectionTitle: "Education & Training",
                 eduSectionSubtitle: "Academic computer science foundation complemented by top-tier national training initiatives.",
+                edu1Badge: "Higher Education",
                 edu1Title: "Menoufia National University",
                 edu1Faculty: "Faculty of Computers and Artificial Intelligence",
-                edu1Major: "IoT and Big Data Analysis",
+                edu1Year: "2022 — 2026",
+                edu1Major: '<i class="fas fa-microchip"></i> IoT and Big Data Analysis',
                 edu1Desc: "Comprehensive academic foundation covering data structures, relational databases, artificial intelligence algorithms, IoT architectures, and high-volume dataset processing.",
-                depiBadge: "MCIT Initiative",
+                depiBadgeText: "DEPI | MCIT",
                 depiTitle: "Data Analysis Training",
                 depiInst: "Digital Egypt Pioneers Initiative (DEPI)",
-                depiMajor: "Advanced Data Analysis & Business Intelligence",
+                depiYear: "MCIT Initiative",
+                depiMajor: '<i class="fas fa-chart-pie"></i> Advanced Data Analysis & Business Intelligence',
                 depiDesc: "Data preparation, analysis, visualization, dashboards and business insights using Excel, SQL, Python and Power BI.",
-                ntiBadge: "NTI Accredited",
+                ntiBadgeText: "NTI Accredited",
                 ntiTitle: "Machine Learning Training",
                 ntiInst: "National Telecommunication Institute (NTI)",
-                ntiMajor: "Applied Machine Learning & Model Deployment",
+                ntiYear: "NTI Accredited",
+                ntiMajor: '<i class="fas fa-network-wired"></i> Applied Machine Learning & Model Deployment',
                 ntiDesc: "End-to-end Machine Learning, supervised and unsupervised learning, model evaluation, tuning and inference.",
 
                 // 9. Why Work With Me (Unified)
@@ -960,19 +991,23 @@
                 // 8. Education & Training
                 eduSectionTitle: "التعليم والتدريب التخصصي",
                 eduSectionSubtitle: "تأسيس أكاديمي في علوم الحاسب والذكاء الاصطناعي مدعوم ببرامج تدريبية معتمدة من كبرى المبادرات الوطنية.",
+                edu1Badge: "درجة أكاديمية",
                 edu1Title: "جامعة المنوفية الأهلية",
                 edu1Faculty: "كلية الحاسبات والذكاء الاصطناعي",
-                edu1Major: "إنترنت الأشياء وتحليل البيانات الضخمة (IoT & Big Data Analysis)",
+                edu1Year: "2022 — 2026",
+                edu1Major: '<i class="fas fa-microchip"></i> إنترنت الأشياء وتحليل البيانات الضخمة (IoT & Big Data)',
                 edu1Desc: "تأسيس أكاديمي متين يشمل تراكيب البيانات، قواعد البيانات، خوارزميات الذكاء الاصطناعي، شبكات إنترنت الأشياء والتعامل مع مجموعات البيانات الكبيرة وحل المشكلات الهندسية.",
-                depiBadge: "مبادرة وزارة الاتصالات",
+                depiBadgeText: "مبادرة DEPI | وزارة الاتصالات",
                 depiTitle: "تدريب تحليل البيانات",
                 depiInst: "مبادرة رواد مصر الرقمية (DEPI)",
-                depiMajor: "تحليل البيانات المتقدم وذكاء الأعمال",
+                depiYear: "مبادرة وزارة الاتصالات",
+                depiMajor: '<i class="fas fa-chart-pie"></i> تحليل البيانات المتقدم وذكاء الأعمال',
                 depiDesc: "تجهيز وتحليل وتصور البيانات وبناء الداشبوردات واستخراج رؤى الأعمال باستخدام Excel و SQL و Python و Power BI.",
-                ntiBadge: "اعتماد معهد NTI",
+                ntiBadgeText: "اعتماد معهد NTI",
                 ntiTitle: "تدريب تعلم الآلة",
                 ntiInst: "المعهد القومي للاتصالات (NTI)",
-                ntiMajor: "تعلم الآلة التطبيقي ونشر النماذج",
+                ntiYear: "اعتماد معهد NTI",
+                ntiMajor: '<i class="fas fa-network-wired"></i> تعلم الآلة التطبيقي ونشر النماذج',
                 ntiDesc: "تطوير نماذج تعلم الآلة الشاملة (End-to-end)، والتعلم الخاضع للإشراف وغير الخاضع للإشراف، وتقييم النماذج وضبط المعايير والاستدلال (Inference).",
 
                 // 9. Why Work With Me (Unified)
@@ -1032,11 +1067,13 @@
             if (lang === 'ar') {
                 htmlEl.setAttribute('dir', 'rtl');
                 htmlEl.setAttribute('lang', 'ar');
+                document.body.setAttribute('dir', 'rtl');
                 document.body.classList.add('rtl');
                 langToggle.innerHTML = '<span style="font-weight:700; font-size: 0.85rem;">EN</span>';
             } else {
                 htmlEl.setAttribute('dir', 'ltr');
                 htmlEl.setAttribute('lang', 'en');
+                document.body.setAttribute('dir', 'ltr');
                 document.body.classList.remove('rtl');
                 langToggle.innerHTML = '<span style="font-weight:700; font-size: 0.85rem;">AR</span>';
             }
