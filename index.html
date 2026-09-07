@@ -44,8 +44,9 @@
                 <li><a href="#about" class="nav-link" data-key="navAbout">About</a></li>
                 <li><a href="#services" class="nav-link" data-key="navWhatIDo">What I Do</a></li>
                 <li><a href="#approach" class="nav-link" data-key="navApproach">Approach</a></li>
-                <li><a href="#skills" class="nav-link" data-key="navSkills">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-key="navProjects">Featured Work</a></li>
+                <li><a href="#skills" class="nav-link" data-key="navSkills">Skills</a></li>
+                <li><a href="#why-me" class="nav-link" data-key="navWhyMe">Why Me</a></li>
                 <li><a href="#contact" class="nav-link" data-key="navContact">Contact</a></li>
             </ul>
 
@@ -66,7 +67,7 @@
         </div>
     </nav>
 
-    <!-- ========== 1. COVER / HERO ========== -->
+    <!-- ========== 1. HERO SECTION ========== -->
     <section class="hero section" id="hero">
         <div class="hero-bg">
             <div class="particle"></div>
@@ -95,10 +96,10 @@
 
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary" data-key="heroCTA1">
-                        <i class="fas fa-handshake" style="margin-right:8px;"></i> Let’s Work Together
+                        <i class="fas fa-handshake"></i> <span>Let’s Work Together</span>
                     </a>
                     <a href="#projects" class="btn btn-outline" data-key="heroCTA2">
-                        <i class="fas fa-folder-open" style="margin-right:8px;"></i> View Featured Work
+                        <i class="fas fa-folder-open"></i> <span>View Featured Work</span>
                     </a>
                 </div>
             </div>
@@ -110,7 +111,7 @@
         </div>
     </section>
 
-    <!-- ========== 2. ABOUT ME & 3. MY JOURNEY ========== -->
+    <!-- ========== 2. ABOUT & JOURNEY (UNIFIED) ========== -->
     <section class="about section" id="about">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="aboutTitle">About Me</h2>
@@ -121,17 +122,12 @@
                 </div>
                 <div class="about-content">
                     <h3 data-key="aboutSubtitle">Connecting Data Analysis with Smart Automation</h3>
-                    <p class="about-text" data-key="aboutBio">
-                        I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation, so I do not just show what the data says—I help turn those insights into dashboards, workflows, and intelligent solutions that create real business value.
+                    <p class="about-text" data-key="aboutBio1">
+                        I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation—so I don't just show what the numbers say, I help transform those insights into live dashboards, automated workflows, and intelligent solutions that create tangible business value.
                     </p>
-
-                    <!-- Personal Brand Highlight Callout -->
-                    <div class="brand-callout animate-on-scroll fade-in-up">
-                        <i class="fas fa-bolt brand-callout-icon"></i>
-                        <div class="brand-callout-text" data-key="brandHighlight">
-                            I connect Data Analysis with Automation
-                        </div>
-                    </div>
+                    <p class="about-text" data-key="aboutBio2">
+                        My journey started with a genuine curiosity about what numbers could reveal beyond the surface. Over time, that curiosity evolved into a passion for solving real business problems. Working with Python, Power BI, Excel, and modern AI Agents taught me that tools are only as valuable as their ability to turn raw information into decisive action.
+                    </p>
 
                     <div class="stats-grid">
                         <div class="stat-item animate-on-scroll fade-in-up">
@@ -140,7 +136,7 @@
                         </div>
                         <div class="stat-item animate-on-scroll fade-in-up">
                             <span class="stat-number gradient-text" data-count="50">0</span>
-                            <span class="stat-label" data-key="statProjects">Projects Done</span>
+                            <span class="stat-label" data-key="statProjects">Projects Completed</span>
                         </div>
                         <div class="stat-item animate-on-scroll fade-in-up">
                             <span class="stat-number gradient-text" data-count="30">0</span>
@@ -149,77 +145,115 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 3. My Journey Box -->
-            <div class="journey-card animate-on-scroll fade-in-up" style="margin-top: 3.5rem;">
-                <h3 style="color:var(--accent-cyan);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;">
-                    <i class="fas fa-compass"></i> <span data-key="journeyTitle">My Journey</span>
-                </h3>
-                <p style="font-size:1.1rem;line-height:1.8;color:var(--text-dark-muted);" data-key="journeyText">
-                    I started my journey with a simple curiosity about what numbers could reveal beyond the surface. Over time, that curiosity grew into a passion for analyzing information, solving real problems, and finding smarter ways to work. As I explored Python, Power BI, Excel, and AI Agents, I discovered that the real value is not in the tools themselves, but in how they can work together to turn information into action.
-                </p>
-            </div>
         </div>
     </section>
 
-    <!-- ========== 4. WHAT I DO ========== -->
+    <!-- ========== 3. WHAT I DO (WITH EXPRESSIVE IMAGES) ========== -->
     <section class="section" id="services">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="whatIDoTitle">What I Do</h2>
-            <div class="projects-grid" style="margin-top: 2rem;">
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="whatIDoSubtitle">
+                End-to-end data intelligence and workflow solutions tailored to business growth.
+            </p>
+
+            <div class="services-grid">
                 <!-- Pillar 1: Data Analysis -->
-                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
-                    <div class="project-content" style="padding:2.5rem;">
-                        <div style="font-size:2.8rem;margin-bottom:1rem;">📊</div>
-                        <h4 class="project-title" data-key="service1Title">Data Analysis</h4>
-                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service1Desc">
-                            Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make better decisions.
+                <div class="service-card animate-on-scroll fade-in-up">
+                    <div class="service-img-wrapper">
+                        <img src="service-data-analysis.jpg" alt="Data Analysis" class="service-img">
+                        <div class="service-img-overlay">
+                            <span class="service-badge"><i class="fas fa-chart-line"></i> Analytics</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h4 class="service-title" data-key="service1Title">Data Analysis</h4>
+                        <p class="service-desc" data-key="service1Desc">
+                            Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make confident decisions.
                         </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">EDA</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Pillar 2: Power BI Dashboards -->
-                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
-                    <div class="project-content" style="padding:2.5rem;">
-                        <div style="font-size:2.8rem;margin-bottom:1rem;">📈</div>
-                        <h4 class="project-title" data-key="service2Title">Power BI Dashboards</h4>
-                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service2Desc">
-                            Building interactive dashboards, KPI reports, and visualizations that make business performance easy to understand and monitor.
+                <div class="service-card animate-on-scroll fade-in-up">
+                    <div class="service-img-wrapper">
+                        <img src="service-powerbi.jpg" alt="Power BI Dashboards" class="service-img">
+                        <div class="service-img-overlay">
+                            <span class="service-badge"><i class="fas fa-chart-pie"></i> Business Intelligence</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h4 class="service-title" data-key="service2Title">Power BI Dashboards</h4>
+                        <p class="service-desc" data-key="service2Desc">
+                            Building interactive dashboards, KPI reports, and visualizations that make business performance intuitive and real-time.
                         </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Data Modeling</span>
+                            <span class="tech-tag">KPIs</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Pillar 3: Excel Solutions -->
-                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
-                    <div class="project-content" style="padding:2.5rem;">
-                        <div style="font-size:2.8rem;margin-bottom:1rem;">📑</div>
-                        <h4 class="project-title" data-key="service3Title">Excel Solutions</h4>
-                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service3Desc">
-                            Cleaning, organizing, analyzing, and automating data to create reliable reports and practical everyday business solutions.
+                <div class="service-card animate-on-scroll fade-in-up">
+                    <div class="service-img-wrapper">
+                        <img src="service-excel.jpg" alt="Excel Solutions" class="service-img">
+                        <div class="service-img-overlay">
+                            <span class="service-badge"><i class="fas fa-table"></i> Spreadsheets</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h4 class="service-title" data-key="service3Title">Excel Solutions</h4>
+                        <p class="service-desc" data-key="service3Desc">
+                            Cleaning, organizing, analyzing, and automating data models to create reliable reports and practical everyday business tools.
                         </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Advanced Excel</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">Formulas</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Pillar 4: AI Agents & Automation -->
-                <div class="project-card animate-on-scroll fade-in-up" style="cursor:default;">
-                    <div class="project-content" style="padding:2.5rem;">
-                        <div style="font-size:2.8rem;margin-bottom:1rem;">🤖</div>
-                        <h4 class="project-title" data-key="service4Title">AI Agents & Automation</h4>
-                        <p class="project-desc" style="-webkit-line-clamp:unset;" data-key="service4Desc">
-                            Building practical AI Agents and automated workflows that reduce repetitive work, save time, and dramatically improve business efficiency.
+                <div class="service-card animate-on-scroll fade-in-up">
+                    <div class="service-img-wrapper">
+                        <img src="service-ai-agents.jpg" alt="AI Agents & Automation" class="service-img">
+                        <div class="service-img-overlay">
+                            <span class="service-badge"><i class="fas fa-robot"></i> Smart Workflows</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h4 class="service-title" data-key="service4Title">AI Agents & Automation</h4>
+                        <p class="service-desc" data-key="service4Desc">
+                            Building practical AI Agents and automated workflows that eliminate repetitive tasks, save valuable hours, and scale operational efficiency.
                         </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AI Agents</span>
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== 5. MY APPROACH (3 Steps) ========== -->
+    <!-- ========== 4. MY APPROACH (3 STEPS) ========== -->
     <section class="about section" id="approach">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="approachTitle">My Approach</h2>
             <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="approachSubtitle">
-                A structured, problem-first methodology that focuses on outcomes, not just tools.
+                A structured, outcome-driven methodology that starts with business reality, not just software.
             </p>
             <div class="approach-grid">
                 <!-- Step 1: Understand -->
@@ -227,7 +261,7 @@
                     <div class="approach-num">1</div>
                     <h4 class="approach-title" data-key="step1Title">Understand</h4>
                     <p class="approach-desc" data-key="step1Desc">
-                        I start by understanding the real business problem before choosing the tools.
+                        I start by understanding the real business problem, objectives, and stakeholder expectations before touching any tool.
                     </p>
                 </div>
 
@@ -236,7 +270,7 @@
                     <div class="approach-num">2</div>
                     <h4 class="approach-title" data-key="step2Title">Analyze</h4>
                     <p class="approach-desc" data-key="step2Desc">
-                        I organize and analyze the available data to identify what really matters.
+                        I clean, organize, and deeply examine the available data to identify patterns, bottlenecks, and the metrics that truly matter.
                     </p>
                 </div>
 
@@ -245,24 +279,94 @@
                     <div class="approach-num">3</div>
                     <h4 class="approach-title" data-key="step3Title">Build</h4>
                     <p class="approach-desc" data-key="step3Desc">
-                        I turn the insights into dashboards, reports, automations, or AI-powered solutions that can be used in real work.
+                        I turn the findings into live dashboards, automated pipelines, or AI solutions ready for seamless daily business use.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== 6. SKILLS ========== -->
+    <!-- ========== 5. FEATURED WORK (PROJECTS MOVED UP) ========== -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-key="projectsTitle">Featured Work</h2>
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="projectsSubtitle">
+                Real client projects demonstrating how data analysis and smart automation solve tangible business challenges.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1: Power BI Fitness Dashboard -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openVideoModal()">
+                        <video class="project-img" src="fitness-dashboard.mp4#t=1" preload="metadata" muted style="pointer-events:none;"></video>
+                        <!-- Play Button Overlay -->
+                        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,26,0.35);transition:0.3s;">
+                            <div style="width:64px;height:64px;border-radius:50%;background:rgba(79,70,229,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 0 25px rgba(79,70,229,0.6);transition:0.3s;">
+                                <i class="fas fa-play" style="color:white;font-size:1.4rem;margin-left:3px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projRealCat">Data Analysis</span>
+                        <h4 class="project-title" data-key="projRealTitle">Fitness & Membership Analytics Dashboard</h4>
+                        <p class="project-desc" data-key="projRealDesc">
+                            <strong>Challenge:</strong> Fragmented membership records and slow, manual weekly reporting.<br>
+                            <strong>Solution:</strong> Automated Power BI dashboard tracking revenue, retention tiers, and client health metrics.<br>
+                            <strong>Business Value:</strong> Eliminated manual reporting, empowered management with a 360° view, and accelerated decision-making.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Data Modeling</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Hospital Emergency Room Dashboard -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('hospital-er-dashboard.jpg', 'https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY')">
+                        <img class="project-img" src="hospital-er-dashboard.jpg" alt="Hospital Emergency Room Dashboard">
+                        <div class="project-overlay">
+                            <span class="project-link" aria-label="Zoom Image"><i class="fas fa-search-plus"></i></span>
+                            <a href="https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY" target="_blank" onclick="event.stopPropagation();" class="project-link" aria-label="View on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projERCat">Healthcare Analytics</span>
+                        <h4 class="project-title" data-key="projERTitle">Hospital Emergency Room Dashboard</h4>
+                        <p class="project-desc" data-key="projERDesc">
+                            <strong>Challenge:</strong> Unpredictable ER wait times and difficulty tracking peak intake bottlenecks.<br>
+                            <strong>Solution:</strong> Operational analytics dashboard monitoring 471 patients, 34.1 min avg wait time, and satisfaction ratings.<br>
+                            <strong>Business Value:</strong> Enabled medical directors to pinpoint peak hours and reduce patient wait times using live operational metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 6. SKILLS & TECH STACK ========== -->
     <section class="section" id="skills">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="skillsTitle">Skills & Technologies</h2>
-            <div class="cards-grid-4" style="margin-top: 2rem;">
-                <!-- Category 1: Data Analytics -->
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="skillsSubtitle">
+                A focused, practical stack built for reliable analysis and intelligent automation.
+            </p>
+
+            <div class="cards-grid-4">
+                <!-- Group 1: Data Analytics -->
                 <div class="value-card animate-on-scroll fade-in-up">
                     <div class="value-card-icon"><i class="fas fa-chart-pie"></i></div>
                     <h4 class="value-card-title" data-key="skillGroup1Title">Data Analytics</h4>
                     <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup1Desc">
-                        Core analytics stack for data wrangling, modeling, and business intelligence:
+                        Data wrangling, statistical modeling, and interactive business intelligence:
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -275,12 +379,12 @@
                     </div>
                 </div>
 
-                <!-- Category 2: AI & Automation -->
+                <!-- Group 2: AI & Automation -->
                 <div class="value-card animate-on-scroll fade-in-up">
                     <div class="value-card-icon"><i class="fas fa-robot"></i></div>
                     <h4 class="value-card-title" data-key="skillGroup2Title">AI & Automation</h4>
                     <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup2Desc">
-                        Building intelligent agents, automated workflows, and connected systems:
+                        Autonomous agents, workflow engines, and LLM integrations:
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">AI Agents</span>
@@ -291,12 +395,12 @@
                     </div>
                 </div>
 
-                <!-- Category 3: Tools & Core Competencies -->
+                <!-- Group 3: Tools & Competencies -->
                 <div class="value-card animate-on-scroll fade-in-up">
                     <div class="value-card-icon"><i class="fas fa-tools"></i></div>
                     <h4 class="value-card-title" data-key="skillGroup3Title">Tools & Competencies</h4>
                     <p class="value-card-desc" style="margin-bottom:1.2rem;" data-key="skillGroup3Desc">
-                        Practical tools and methods applied directly to client and business projects:
+                        Core practices applied across real-world client deliverables:
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Jupyter Notebook</span>
@@ -311,17 +415,7 @@
         </div>
     </section>
 
-    <!-- ========== 10. USP (VISUAL IMPACT SECTION) ========== -->
-    <section class="usp-section">
-        <div class="container">
-            <span class="usp-quote-badge" data-key="uspBadge">Personal Vision & Promise</span>
-            <h2 class="usp-statement" data-key="uspStatement">
-                "From raw data to clear decisions. From repetitive work to smart automation."
-            </h2>
-        </div>
-    </section>
-
-    <!-- ========== 7. EXPERIENCE & 8. EDUCATION ========== -->
+    <!-- ========== 7. EXPERIENCE & EDUCATION ========== -->
     <section class="section">
         <div class="container">
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="contact-container">
@@ -336,20 +430,20 @@
                             <span class="edu-badge-year" data-key="expType">Freelance</span>
                         </div>
                         <p style="color:var(--text-dark-muted);margin-bottom:1.25rem;" data-key="expSummary">
-                            Helping businesses and individuals analyze data, build dashboards, automate repetitive tasks, and develop practical AI-powered solutions based on their needs.
+                            Partnering with businesses and founders to analyze operational data, construct executive dashboards, and implement practical automated workflows.
                         </p>
                         <ul style="display:flex;flex-direction:column;gap:0.75rem;">
                             <li style="display:flex;align-items:flex-start;gap:0.75rem;">
                                 <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
-                                <span data-key="expPoint1"><strong>Data Analysis & Reporting:</strong> Turning raw data into organized reports and useful business insights.</span>
+                                <span data-key="expPoint1"><strong>Actionable Business Intelligence:</strong> Designing intuitive KPI dashboards that replace slow manual reporting.</span>
                             </li>
                             <li style="display:flex;align-items:flex-start;gap:0.75rem;">
                                 <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
-                                <span data-key="expPoint2"><strong>Dashboards:</strong> Creating clear interactive dashboards for monitoring KPIs and performance.</span>
+                                <span data-key="expPoint2"><strong>Data Pipelines & Modeling:</strong> Cleaning and connecting diverse data sources into dependable reporting architectures.</span>
                             </li>
                             <li style="display:flex;align-items:flex-start;gap:0.75rem;">
                                 <i class="fas fa-check-circle" style="color:var(--accent-cyan);margin-top:4px;"></i>
-                                <span data-key="expPoint3"><strong>Automation & AI Agents:</strong> Building workflows and intelligent solutions that reduce manual work and improve efficiency.</span>
+                                <span data-key="expPoint3"><strong>Practical Automation:</strong> Building tailored AI agents and automated routines that eliminate repetitive daily friction.</span>
                             </li>
                         </ul>
                     </div>
@@ -370,7 +464,7 @@
                             <p style="color:var(--accent-cyan);font-weight:600;margin-bottom:0.25rem;" data-key="eduFaculty">Faculty of Computers and Artificial Intelligence</p>
                             <p style="color:var(--text-dark-primary);font-weight:500;margin-bottom:1rem;" data-key="eduMajor">IoT and Big Data Analysis</p>
                             <p style="color:var(--text-dark-muted);font-size:0.95rem;line-height:1.6;" data-key="eduDesc">
-                                My academic background gave me a foundation in data analysis, programming, databases, artificial intelligence, IoT, and working with large datasets while developing practical problem-solving skills through technical projects.
+                                Comprehensive academic foundation covering data structures, relational databases, artificial intelligence algorithms, IoT architectures, and high-volume dataset processing.
                             </p>
                         </div>
                     </div>
@@ -379,172 +473,65 @@
         </div>
     </section>
 
-    <!-- ========== 9. WHAT MAKES ME DIFFERENT ========== -->
-    <section class="about section">
-        <div class="container">
-            <h2 class="section-title gradient-text" data-key="diffTitle">What Makes Me Different</h2>
-            <div class="cards-grid-4">
-                <!-- Card 1 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-link"></i></div>
-                    <h4 class="value-card-title" data-key="diff1Title">Data Meets Automation</h4>
-                    <p class="value-card-desc" data-key="diff1Desc">
-                        I do not treat data analysis and automation as separate services. I connect them to help businesses move from understanding what happened to taking action.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-bullseye"></i></div>
-                    <h4 class="value-card-title" data-key="diff2Title">Business First</h4>
-                    <p class="value-card-desc" data-key="diff2Desc">
-                        I focus on the problem and the outcome before choosing the technology.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-cogs"></i></div>
-                    <h4 class="value-card-title" data-key="diff3Title">Practical Solutions</h4>
-                    <p class="value-card-desc" data-key="diff3Desc">
-                        My goal is to build solutions that can actually be used in everyday work, not just impressive demos.
-                    </p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-comments"></i></div>
-                    <h4 class="value-card-title" data-key="diff4Title">Clear Communication</h4>
-                    <p class="value-card-desc" data-key="diff4Desc">
-                        I keep the process simple, clear, and easy to follow from the first discussion to final delivery.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== 11. FEATURED WORK (PROJECTS) ========== -->
-    <section class="projects section" id="projects">
-        <div class="container">
-            <h2 class="section-title gradient-text" data-key="projectsTitle">Featured Work</h2>
-            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="projectsSubtitle">
-                Selected client and portfolio projects showcasing end-to-end data analytics and business value.
-            </p>
-
-            <!-- Projects Grid -->
-            <div class="projects-grid">
-                <!-- REAL Project 1: Power BI Fitness Dashboard -->
-                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
-                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openVideoModal()">
-                        <video class="project-img" src="fitness-dashboard.mp4#t=1" preload="metadata" muted style="pointer-events:none;"></video>
-                        <!-- Play Button Overlay -->
-                        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,26,0.35);transition:0.3s;">
-                            <div style="width:70px;height:70px;border-radius:50%;background:rgba(79,70,229,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(79,70,229,0.5);transition:0.3s;">
-                                <i class="fas fa-play" style="color:white;font-size:1.5rem;margin-left:4px;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category" data-key="projRealCat">Data Analysis</span>
-                        <h4 class="project-title" data-key="projRealTitle">Fitness & Membership Analytics Dashboard</h4>
-                        <p class="project-desc" data-key="projRealDesc">
-                            <strong>Challenge:</strong> Fragmented fitness center data with manual reporting.<br>
-                            <strong>Solution:</strong> Power BI dashboard with automated KPI tracking, membership tier analytics, and health calculators.<br>
-                            <strong>Business Value:</strong> Eliminated manual reporting, sped up management decisions, 360° performance view.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">DAX</span>
-                            <span class="tech-tag">Data Modeling</span>
-                            <span class="tech-tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- REAL Project 2: Hospital Emergency Room Dashboard -->
-                <div class="project-card animate-on-scroll fade-in-up" data-category="data">
-                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('hospital-er-dashboard.jpg', 'https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY')">
-                        <img class="project-img" src="hospital-er-dashboard.jpg" alt="Hospital Emergency Room Dashboard">
-                        <div class="project-overlay">
-                            <span class="project-link" aria-label="Zoom Image"><i class="fas fa-search-plus"></i></span>
-                            <a href="https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY" target="_blank" onclick="event.stopPropagation();" class="project-link" aria-label="View on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category" data-key="projERCat">Healthcare Analytics</span>
-                        <h4 class="project-title" data-key="projERTitle">Hospital Emergency Room Dashboard</h4>
-                        <p class="project-desc" data-key="projERDesc">
-                            <strong>Challenge:</strong> Long emergency room wait times and tracking peak intake hours.<br>
-                            <strong>Solution:</strong> Comprehensive operational dashboard tracking 471 patients, wait times (34.1 min), and satisfaction (5.31/10).<br>
-                            <strong>Business Value:</strong> Enabled real-time performance monitoring and data-driven patient intake optimization.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">DAX</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Excel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== 12. WHY WORK WITH ME ========== -->
-    <section class="section">
+    <!-- ========== 8. WHY WORK WITH ME (UNIFIED VALUE PROPOSITION) ========== -->
+    <section class="about section" id="why-me">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="whyTitle">Why Work With Me</h2>
+            <p style="text-align:center;max-width:700px;margin:-1.5rem auto 2.5rem;color:var(--text-dark-muted);" data-key="whySubtitle">
+                The core principles that shape every project and ensure maximum return on investment.
+            </p>
+
             <div class="cards-grid-4">
-                <!-- Card 1 -->
+                <!-- Pillar 1 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-link"></i></div>
+                    <h4 class="value-card-title" data-key="why1Title">Data + Automation Synergy</h4>
+                    <p class="value-card-desc" data-key="why1Desc">
+                        I don't treat analytics and automation as isolated tasks. By bridging both, insights immediately trigger automated actions and smoother operations.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="value-card animate-on-scroll fade-in-up">
+                    <div class="value-card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4 class="value-card-title" data-key="why2Title">Business-First Mindset</h4>
+                    <p class="value-card-desc" data-key="why2Desc">
+                        Technology is just the enabler. My focus is strictly on the business problem, ROI, and measurable outcomes before selecting any tool.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
                 <div class="value-card animate-on-scroll fade-in-up">
                     <div class="value-card-icon"><i class="fas fa-check-double"></i></div>
-                    <h4 class="value-card-title" data-key="why1Title">Accurate</h4>
-                    <p class="value-card-desc" data-key="why1Desc">
-                        Focused on clean, organized, and reliable results that stakeholders can trust without second guessing.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-tools"></i></div>
-                    <h4 class="value-card-title" data-key="why2Title">Practical</h4>
-                    <p class="value-card-desc" data-key="why2Desc">
-                        Solutions designed around real needs rather than unnecessary complexity or tech buzzwords.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    <h4 class="value-card-title" data-key="why3Title">Efficient</h4>
+                    <h4 class="value-card-title" data-key="why3Title">Reliable & Production-Ready</h4>
                     <p class="value-card-desc" data-key="why3Desc">
-                        Using automation where it can genuinely save time, eliminate human errors, and free up manual effort.
+                        No theoretical demos. Every dashboard, pipeline, and AI workflow is thoroughly verified, organized, and engineered for durable daily business use.
                     </p>
                 </div>
 
-                <!-- Card 4 -->
+                <!-- Pillar 4 -->
                 <div class="value-card animate-on-scroll fade-in-up">
-                    <div class="value-card-icon"><i class="fas fa-chart-line"></i></div>
-                    <h4 class="value-card-title" data-key="why4Title">Business Focused</h4>
+                    <div class="value-card-icon"><i class="fas fa-comments"></i></div>
+                    <h4 class="value-card-title" data-key="why4Title">Clear & Direct Communication</h4>
                     <p class="value-card-desc" data-key="why4Desc">
-                        Looking beyond the technical side to understand how each report and workflow directly creates bottom-line value.
+                        No confusing jargon. You get transparent milestones, straightforward progress updates, and responsive support from kickoff to completion.
                     </p>
                 </div>
             </div>
 
-            <!-- ========== 13. CALL TO ACTION BANNER ========== -->
+            <!-- Pre-Contact CTA -->
             <div class="pre-contact-cta animate-on-scroll fade-in-up">
-                <h3 data-key="ctaQuestion">Have data you are not getting enough value from? Or repetitive work you want to automate?</h3>
-                <p data-key="ctaSubtitle">Let’s turn it into a practical solution.</p>
+                <h3 data-key="ctaQuestion">Ready to turn scattered data into confident business decisions?</h3>
+                <p data-key="ctaSubtitle">Let’s discuss your current challenges and build a practical, automated solution.</p>
                 <a href="#contact" class="btn btn-primary" data-key="ctaButton">
-                    <i class="fas fa-comment-dots" style="margin-right:8px;"></i> Start a Conversation
+                    <i class="fas fa-comment-dots"></i> <span>Start a Conversation</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ========== 14. CONTACT ========== -->
-    <section class="about section" id="contact">
+    <!-- ========== 9. CONTACT & QR CODE ========== -->
+    <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title gradient-text" data-key="contactTitle">Let’s Connect</h2>
             <div class="contact-container" style="margin-top: 2rem;">
@@ -601,7 +588,7 @@
                         <label for="message" class="form-label" data-key="formMessage">Your Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit" data-key="formSubmit">
-                        <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Send Message
+                        <i class="fas fa-paper-plane"></i> <span>Send Message</span>
                     </button>
                     <div id="formStatus" style="margin-top:1rem;text-align:center;display:none;"></div>
                 </form>
@@ -627,7 +614,7 @@
         </button>
         <!-- Video Player -->
         <video id="modalVideo" src="fitness-dashboard.mp4" controls
-            style="max-width:90%;max-height:85vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);cursor:default;"
+            style="max-width:90%;max-height:80vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);cursor:default;"
             onclick="event.stopPropagation();">
         </video>
         <!-- LinkedIn Link -->
@@ -659,9 +646,9 @@
             <i class="fas fa-times"></i>
         </button>
         <!-- Modal Image Container -->
-        <div onclick="event.stopPropagation();" style="max-width:92%;max-height:85vh;display:flex;flex-direction:column;align-items:center;position:relative;">
+        <div onclick="event.stopPropagation();" style="max-width:92%;max-height:80vh;display:flex;flex-direction:column;align-items:center;position:relative;">
             <img id="modalImg" src="hospital-er-dashboard.jpg" alt="Dashboard Preview"
-                style="max-width:100%;max-height:80vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);object-fit:contain;cursor:default;">
+                style="max-width:100%;max-height:78vh;border-radius:1rem;box-shadow:0 0 50px rgba(79,70,229,0.3);object-fit:contain;cursor:default;">
         </div>
         <!-- LinkedIn Link -->
         <a id="imageModalLink" href="https://ae.linkedin.com/posts/youssef-ahmed-zeus_hospital-emergency-room-dashboard-monthly-activity-7365839186689511424-QZGY" 
@@ -703,7 +690,7 @@
         'use strict';
 
         // ============================================================
-        // TRANSLATIONS (Complete Bilingual Dictionary for all 14 points)
+        // TRANSLATIONS (Complete Streamlined Bilingual Dictionary)
         // ============================================================
         const translations = {
             en: {
@@ -711,8 +698,9 @@
                 navAbout: "About",
                 navWhatIDo: "What I Do",
                 navApproach: "Approach",
-                navSkills: "Skills",
                 navProjects: "Featured Work",
+                navSkills: "Skills",
+                navWhyMe: "Why Me",
                 navContact: "Contact",
 
                 // 1. Hero
@@ -720,110 +708,92 @@
                 heroName: "Youssef Ahmed",
                 heroTitle: "Data Analyst & AI Agent Developer",
                 heroSubtitle: "Turning data into clear insights and repetitive tasks into smart automation",
-                heroCTA1: '<i class="fas fa-handshake" style="margin-right:8px;"></i> Let’s Work Together',
-                heroCTA2: '<i class="fas fa-folder-open" style="margin-right:8px;"></i> View Featured Work',
+                heroCTA1: '<i class="fas fa-handshake"></i> <span>Let’s Work Together</span>',
+                heroCTA2: '<i class="fas fa-folder-open"></i> <span>View Featured Work</span>',
 
-                // 2. About Me
+                // 2. About Me & Journey
                 aboutTitle: "About Me",
                 aboutSubtitle: "Connecting Data Analysis with Smart Automation",
-                aboutBio: "I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation, so I do not just show what the data says—I help turn those insights into dashboards, workflows, and intelligent solutions that create real business value.",
-                brandHighlight: "I connect Data Analysis with Automation",
+                aboutBio1: "I’m Youssef Ahmed, a Data Analyst and AI Agent Developer focused on helping businesses make better decisions and work more efficiently. What sets me apart is the way I connect data analysis with practical automation—so I don't just show what the numbers say, I help transform those insights into live dashboards, automated workflows, and intelligent solutions that create tangible business value.",
+                aboutBio2: "My journey started with a genuine curiosity about what numbers could reveal beyond the surface. Over time, that curiosity evolved into a passion for solving real business problems. Working with Python, Power BI, Excel, and modern AI Agents taught me that tools are only as valuable as their ability to turn raw information into decisive action.",
                 statExp: "Years Experience",
-                statProjects: "Projects Done",
+                statProjects: "Projects Completed",
                 statClients: "Happy Clients",
 
-                // 3. Journey
-                journeyTitle: "My Journey",
-                journeyText: "I started my journey with a simple curiosity about what numbers could reveal beyond the surface. Over time, that curiosity grew into a passion for analyzing information, solving real problems, and finding smarter ways to work. As I explored Python, Power BI, Excel, and AI Agents, I discovered that the real value is not in the tools themselves, but in how they can work together to turn information into action.",
-
-                // 4. What I Do
+                // 3. What I Do
                 whatIDoTitle: "What I Do",
+                whatIDoSubtitle: "End-to-end data intelligence and workflow solutions tailored to business growth.",
                 service1Title: "Data Analysis",
-                service1Desc: "Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make better decisions.",
+                service1Desc: "Transforming raw and complex data into clear, actionable insights that help businesses understand performance and make confident decisions.",
                 service2Title: "Power BI Dashboards",
-                service2Desc: "Building interactive dashboards, KPI reports, and visualizations that make business performance easy to understand and monitor.",
+                service2Desc: "Building interactive dashboards, KPI reports, and visualizations that make business performance intuitive and real-time.",
                 service3Title: "Excel Solutions",
-                service3Desc: "Cleaning, organizing, analyzing, and automating data to create reliable reports and practical everyday business solutions.",
+                service3Desc: "Cleaning, organizing, analyzing, and automating data models to create reliable reports and practical everyday business tools.",
                 service4Title: "AI Agents & Automation",
-                service4Desc: "Building practical AI Agents and automated workflows that reduce repetitive work, save time, and dramatically improve business efficiency.",
+                service4Desc: "Building practical AI Agents and automated workflows that eliminate repetitive tasks, save valuable hours, and scale operational efficiency.",
 
-                // 5. Approach
+                // 4. Approach
                 approachTitle: "My Approach",
-                approachSubtitle: "A structured, problem-first methodology that focuses on outcomes, not just tools.",
+                approachSubtitle: "A structured, outcome-driven methodology that starts with business reality, not just software.",
                 step1Title: "Understand",
-                step1Desc: "I start by understanding the real business problem before choosing the tools.",
+                step1Desc: "I start by understanding the real business problem, objectives, and stakeholder expectations before touching any tool.",
                 step2Title: "Analyze",
-                step2Desc: "I organize and analyze the available data to identify what really matters.",
+                step2Desc: "I clean, organize, and deeply examine the available data to identify patterns, bottlenecks, and the metrics that truly matter.",
                 step3Title: "Build",
-                step3Desc: "I turn the insights into dashboards, reports, automations, or AI-powered solutions that can be used in real work.",
+                step3Desc: "I turn the findings into live dashboards, automated pipelines, or AI solutions ready for seamless daily business use.",
+
+                // 5. Featured Work
+                projectsTitle: "Featured Work",
+                projectsSubtitle: "Real client projects demonstrating how data analysis and smart automation solve tangible business challenges.",
+                projRealCat: "Data Analysis",
+                projRealTitle: "Fitness & Membership Analytics Dashboard",
+                projRealDesc: "<strong>Challenge:</strong> Fragmented membership records and slow, manual weekly reporting.<br><strong>Solution:</strong> Automated Power BI dashboard tracking revenue, retention tiers, and client health metrics.<br><strong>Business Value:</strong> Eliminated manual reporting, empowered management with a 360° view, and accelerated decision-making.",
+                projERCat: "Healthcare Analytics",
+                projERTitle: "Hospital Emergency Room Dashboard",
+                projERDesc: "<strong>Challenge:</strong> Unpredictable ER wait times and difficulty tracking peak intake bottlenecks.<br><strong>Solution:</strong> Operational analytics dashboard monitoring 471 patients, 34.1 min avg wait time, and satisfaction ratings.<br><strong>Business Value:</strong> Enabled medical directors to pinpoint peak hours and reduce patient wait times using live operational metrics.",
 
                 // 6. Skills
                 skillsTitle: "Skills & Technologies",
+                skillsSubtitle: "A focused, practical stack built for reliable analysis and intelligent automation.",
                 skillGroup1Title: "Data Analytics",
-                skillGroup1Desc: "Core analytics stack for data wrangling, modeling, and business intelligence:",
+                skillGroup1Desc: "Data wrangling, statistical modeling, and interactive business intelligence:",
                 skillGroup2Title: "AI & Automation",
-                skillGroup2Desc: "Building intelligent agents, automated workflows, and connected systems:",
+                skillGroup2Desc: "Autonomous agents, workflow engines, and LLM integrations:",
                 skillGroup3Title: "Tools & Competencies",
-                skillGroup3Desc: "Practical tools and methods applied directly to client and business projects:",
+                skillGroup3Desc: "Core practices applied across real-world client deliverables:",
 
-                // 10. USP
-                uspBadge: "Personal Vision & Promise",
-                uspStatement: "“From raw data to clear decisions. From repetitive work to smart automation.”",
-
-                // 7. Experience
+                // 7. Experience & Education
                 expSectionTitle: "Experience",
                 expJobTitle: "Freelance Data Analyst & AI Agent Developer",
                 expType: "Freelance",
-                expSummary: "Helping businesses and individuals analyze data, build dashboards, automate repetitive tasks, and develop practical AI-powered solutions based on their needs.",
-                expPoint1: "<strong>Data Analysis & Reporting:</strong> Turning raw data into organized reports and useful business insights.",
-                expPoint2: "<strong>Dashboards:</strong> Creating clear interactive dashboards for monitoring KPIs and performance.",
-                expPoint3: "<strong>Automation & AI Agents:</strong> Building workflows and intelligent solutions that reduce manual work and improve efficiency.",
+                expSummary: "Partnering with businesses and founders to analyze operational data, construct executive dashboards, and implement practical automated workflows.",
+                expPoint1: "<strong>Actionable Business Intelligence:</strong> Designing intuitive KPI dashboards that replace slow manual reporting.",
+                expPoint2: "<strong>Data Pipelines & Modeling:</strong> Cleaning and connecting diverse data sources into dependable reporting architectures.",
+                expPoint3: "<strong>Practical Automation:</strong> Building tailored AI agents and automated routines that eliminate repetitive daily friction.",
 
-                // 8. Education
                 eduSectionTitle: "Education",
                 eduUni: "Menoufia National University",
                 eduFaculty: "Faculty of Computers and Artificial Intelligence",
                 eduMajor: "IoT and Big Data Analysis",
-                eduDesc: "My academic background gave me a foundation in data analysis, programming, databases, artificial intelligence, IoT, and working with large datasets while developing practical problem-solving skills through technical projects.",
+                eduDesc: "Comprehensive academic foundation covering data structures, relational databases, artificial intelligence algorithms, IoT architectures, and high-volume dataset processing.",
 
-                // 9. What Makes Me Different
-                diffTitle: "What Makes Me Different",
-                diff1Title: "Data Meets Automation",
-                diff1Desc: "I do not treat data analysis and automation as separate services. I connect them to help businesses move from understanding what happened to taking action.",
-                diff2Title: "Business First",
-                diff2Desc: "I focus on the problem and the outcome before choosing the technology.",
-                diff3Title: "Practical Solutions",
-                diff3Desc: "My goal is to build solutions that can actually be used in everyday work, not just impressive demos.",
-                diff4Title: "Clear Communication",
-                diff4Desc: "I keep the process simple, clear, and easy to follow from the first discussion to final delivery.",
-
-                // 11. Projects
-                projectsTitle: "Featured Work",
-                projectsSubtitle: "Selected client and portfolio projects showcasing end-to-end data analytics and business value.",
-                projRealCat: "Data Analysis",
-                projRealTitle: "Fitness & Membership Analytics Dashboard",
-                projRealDesc: "<strong>Challenge:</strong> Fragmented fitness center data with manual reporting.<br><strong>Solution:</strong> Power BI dashboard with automated KPI tracking, membership tier analytics, and health calculators.<br><strong>Business Value:</strong> Eliminated manual reporting, sped up management decisions, 360° performance view.",
-                projERCat: "Healthcare Analytics",
-                projERTitle: "Hospital Emergency Room Dashboard",
-                projERDesc: "<strong>Challenge:</strong> Long emergency room wait times and tracking peak intake hours.<br><strong>Solution:</strong> Comprehensive operational dashboard tracking 471 patients, wait times (34.1 min), and satisfaction (5.31/10).<br><strong>Business Value:</strong> Enabled real-time performance monitoring and data-driven patient intake optimization.",
-
-                // 12. Why Work With Me
+                // 8. Why Work With Me (Unified)
                 whyTitle: "Why Work With Me",
-                why1Title: "Accurate",
-                why1Desc: "Focused on clean, organized, and reliable results that stakeholders can trust without second guessing.",
-                why2Title: "Practical",
-                why2Desc: "Solutions designed around real needs rather than unnecessary complexity or tech buzzwords.",
-                why3Title: "Efficient",
-                why3Desc: "Using automation where it can genuinely save time, eliminate human errors, and free up manual effort.",
-                why4Title: "Business Focused",
-                why4Desc: "Looking beyond the technical side to understand how each report and workflow directly creates bottom-line value.",
+                whySubtitle: "The core principles that shape every project and ensure maximum return on investment.",
+                why1Title: "Data + Automation Synergy",
+                why1Desc: "I don't treat analytics and automation as isolated tasks. By bridging both, insights immediately trigger automated actions and smoother operations.",
+                why2Title: "Business-First Mindset",
+                why2Desc: "Technology is just the enabler. My focus is strictly on the business problem, ROI, and measurable outcomes before selecting any tool.",
+                why3Title: "Reliable & Production-Ready",
+                why3Desc: "No theoretical demos. Every dashboard, pipeline, and AI workflow is thoroughly verified, organized, and engineered for durable daily business use.",
+                why4Title: "Clear & Direct Communication",
+                why4Desc: "No confusing jargon. You get transparent milestones, straightforward progress updates, and responsive support from kickoff to completion.",
 
-                // 13. Pre-Contact CTA
-                ctaQuestion: "Have data you are not getting enough value from? Or repetitive work you want to automate?",
-                ctaSubtitle: "Let’s turn it into a practical solution.",
-                ctaButton: '<i class="fas fa-comment-dots" style="margin-right:8px;"></i> Start a Conversation',
+                // 9. Pre-Contact CTA & Contact
+                ctaQuestion: "Ready to turn scattered data into confident business decisions?",
+                ctaSubtitle: "Let’s discuss your current challenges and build a practical, automated solution.",
+                ctaButton: '<i class="fas fa-comment-dots"></i> <span>Start a Conversation</span>',
 
-                // 14. Contact
                 contactTitle: "Let’s Connect",
                 contactEmail: "Email",
                 contactPhone: "Phone / WhatsApp",
@@ -832,7 +802,7 @@
                 formName: "Your Name",
                 formEmail: "Your Email",
                 formMessage: "Your Message",
-                formSubmit: '<i class="fas fa-paper-plane" style="margin-right:8px;"></i> Send Message',
+                formSubmit: '<i class="fas fa-paper-plane"></i> <span>Send Message</span>',
                 footerCopy: "&copy; 2024 Youssef Ahmed. All rights reserved.",
                 formSuccess: "✅ Message sent successfully! I'll get back to you soon.",
             },
@@ -841,8 +811,9 @@
                 navAbout: "عنّي",
                 navWhatIDo: "ما أقدمه",
                 navApproach: "منهجية العمل",
-                navSkills: "المهارات",
                 navProjects: "أبرز الأعمال",
+                navSkills: "المهارات",
+                navWhyMe: "لماذا تختارني؟",
                 navContact: "تواصل معي",
 
                 // 1. Hero
@@ -850,110 +821,92 @@
                 heroName: "يوسف أحمد",
                 heroTitle: "محلل بيانات ومطور AI Agents",
                 heroSubtitle: "تحويل البيانات إلى رؤى واضحة والمهام الروتينية المتكررة إلى أتمتة ذكية",
-                heroCTA1: '<i class="fas fa-handshake" style="margin-left:8px;"></i> لنعمل معاً',
-                heroCTA2: '<i class="fas fa-folder-open" style="margin-left:8px;"></i> استعرض أعمالي',
+                heroCTA1: '<i class="fas fa-handshake"></i> <span>لنعمل معاً</span>',
+                heroCTA2: '<i class="fas fa-folder-open"></i> <span>استعرض أعمالي</span>',
 
-                // 2. About Me
+                // 2. About Me & Journey
                 aboutTitle: "عنّي",
                 aboutSubtitle: "الربط بين تحليل البيانات والأتمتة الذكية",
-                aboutBio: "أنا يوسف أحمد، محلل بيانات ومطور وكلاء ذكاء اصطناعي (AI Agents) أركز على مساعدة الشركات وأصحاب الأعمال في اتخاذ قرارات أفضل والعمل بكفاءة أعلى. ما يميزني هو طريقتي في ربط تحليل البيانات بالأتمتة العملية؛ فأنا لا أكتفي بإظهار ما تقوله الأرقام، بل أساعد في تحويل تلك الرؤى إلى لوحات تحكم وتدفقات عمل وحلول ذكية تصنع قيمة تجارية حقيقية.",
-                brandHighlight: "أربط بين تحليل البيانات والأتمتة العملية",
+                aboutBio1: "أنا يوسف أحمد، محلل بيانات ومطور وكلاء ذكاء اصطناعي (AI Agents) أركز على مساعدة الشركات وأصحاب الأعمال في اتخاذ قرارات دقيقة والعمل بأعلى كفاءة ممكنة. ما يميزني هو طريقتي في ربط تحليل البيانات بالأتمتة العملية؛ فلا أكتفي بإظهار ما تقوله الأرقام، بل أساعد في تحويل تلك الرؤى إلى لوحات تحكم وتدفقات عمل وحلول ذكية تصنع قيمة تجارية حقيقية.",
+                aboutBio2: "بدأت رحلتي بفضول حقيقي لاكتشاف ما تخفيه الأرقام وراء السطح، وسرعان ما تحول ذلك إلى شغف بحل مشاكل الأعمال الواقعية. العمل المستمر مع Python و Power BI و Excel والـ AI Agents علمني أن الأدوات لا قيمة لها إلا بقدرتها على تحويل المعلومات إلى قرارات وإجراءات تنفيذية ملموسة.",
                 statExp: "سنوات الخبرة",
                 statProjects: "مشروع منجز",
                 statClients: "عميل سعيد",
 
-                // 3. Journey
-                journeyTitle: "رحلتي وشغفي",
-                journeyText: "بدأت رحلتي بفضول بسيط حول ما يمكن أن تكشفه الأرقام وراء ما يبدو على السطح. بمرور الوقت، تحول هذا الفضول إلى شغف عميق بتحليل المعلومات، وحل المشكلات الواقعية، وإيجاد طرق أذكى لإنجاز العمل. ومع تعمقي في Python و Power BI و Excel و AI Agents، أدركت أن القيمة الحقيقية لا تكمن في الأدوات نفسها، بل في كيفية عملها معاً لتحويل المعلومات إلى خطوات وإجراءات فعلية.",
-
-                // 4. What I Do
+                // 3. What I Do
                 whatIDoTitle: "ما أقدمه",
+                whatIDoSubtitle: "حلول متكاملة في ذكاء الأعمال والأتمتة الذكية مصممة لتطوير أداء عملك.",
                 service1Title: "تحليل البيانات",
-                service1Desc: "تحويل البيانات الخام والمعقدة إلى رؤى واضحة وقابلة للتنفيذ تساعد الشركات على فهم الأداء واتخاذ قرارات أدق.",
+                service1Desc: "تحويل البيانات الخام والمعقدة إلى رؤى واضحة وقابلة للتنفيذ تساعد الشركات على فهم الأداء واتخاذ قرارات أدق بثقة.",
                 service2Title: "لوحات تحكم Power BI",
-                service2Desc: "بناء لوحات تحكم تفاعلية، وتقارير مؤشرات أداء (KPIs)، ورسوم بيانية تجعل متابعة أداء العمل أمراً سهلاً وسريعاً.",
+                service2Desc: "بناء لوحات تحكم تفاعلية وتقارير مؤشرات أداء (KPIs) تجعل متابعة العمل ومراقبته سهلة ولحظية.",
                 service3Title: "حلول Excel المتقدمة",
-                service3Desc: "تنظيف وتنظيم وتحليل وأتمتة البيانات لإنشاء تقارير موثوقة وحلول عملية لأعمالك اليومية.",
+                service3Desc: "تنظيف وتنظيم ونمذجة وأتمتة جداول البيانات لإنشاء تقارير موثوقة وحلول عملية لعملك اليومي.",
                 service4Title: "وكلاء الذكاء الاصطناعي والأتمتة",
-                service4Desc: "بناء وكلاء AI عمليين وتدفقات عمل مؤتمتة تقلل من المهام المتكررة، وتوفر الوقت، وترفع الإنتاجية بشكل ملحوظ.",
+                service4Desc: "بناء وكلاء AI عمليين وتدفقات عمل مؤتمتة تقضي على المهام اليدوية المكررة وتوفر ساعات ثمينة.",
 
-                // 5. Approach
-                approachTitle: "منهجية العمل (My Approach)",
-                approachSubtitle: "منهجية منظمة تبدأ بفهم مشكلة العمل الحقيقية وتركز على النتيجة وليس فقط على الأدوات.",
+                // 4. Approach
+                approachTitle: "منهجية العمل",
+                approachSubtitle: "منهجية منظمة تركز على النتائج وتبدأ من واقع العمل والمشكلة الحقيقية.",
                 step1Title: "1. الفهم (Understand)",
-                step1Desc: "أبدأ بفهم مشكلة العمل الحقيقية وأهدافها بدقة قبل اختيار أي أداة.",
+                step1Desc: "أبدأ بفهم مشكلة العمل الحقيقية والأهداف المطلوبة وتوقعات أصحاب القرار قبل اختيار أي أداة.",
                 step2Title: "2. التحليل (Analyze)",
-                step2Desc: "أقوم بتنظيم وفحص البيانات المتاحة وتحديد ما يهم العمل فعلياً.",
+                step2Desc: "تنظيم وفحص البيانات المتاحة بعمق لكشف الأنماط ونقاط الاختناق والمؤشرات الأكثر أهمية.",
                 step3Title: "3. البناء (Build)",
-                step3Desc: "أحول الرؤى إلى لوحات تحكم، أو تقارير، أو عمليات أتمتة، أو حلول مدعومة بالذكاء الاصطناعي قابلة للاستخدام اليومي.",
+                step3Desc: "تحويل النتائج إلى لوحات تحكم حية، أو مسارات أتمتة، أو حلول ذكية جاهزة للاستخدام اليومي المباشر.",
+
+                // 5. Featured Work
+                projectsTitle: "أبرز الأعمال",
+                projectsSubtitle: "مشاريع واقعية توضح كيف يمكن للتحليل والأتمتة حل تحديات تجارية فعلية.",
+                projRealCat: "تحليل بيانات",
+                projRealTitle: "لوحة تحليلات اللياقة والعضويات",
+                projRealDesc: "<strong>التحدي:</strong> تشتت بيانات المشتركين والاعتماد على تقارير يدوية أسبوعية بطيئة.<br><strong>الحل:</strong> لوحة تحكم Power BI ذكية لمتابعة الإيرادات وتصنيف العضويات والمؤشرات الصحية للمشتركين.<br><strong>القيمة المضافة:</strong> القضاء على التقارير اليدوية بالكامل وتوفير رؤية 360° للإدارة لاتخاذ قرارات سريعة ومدروسة.",
+                projERCat: "تحليلات الرعاية الصحية",
+                projERTitle: "لوحة تحكم قسم طوارئ المستشفى",
+                projERDesc: "<strong>التحدي:</strong> صعوبة توقع أوقات انتظار المرضى وتحديد أوقات الذروة والاختناق.<br><strong>الحل:</strong> داشبورد عملياتي شامل لتتبع 471 مريضاً، ومتوسط وقت الانتظار (34.1 دقيقة)، ومعدل الرضا.<br><strong>القيمة المضافة:</strong> مساعدة الإدارة الطبية على كشف ساعات الذروة لحظياً وتقليل فترات انتظار المرضى.",
 
                 // 6. Skills
                 skillsTitle: "المهارات والتقنيات",
+                skillsSubtitle: "مجموعة أدوات مركزة وعملية مبنية لتقديم تحليلات دقيقة وأتمتة متقنة.",
                 skillGroup1Title: "تحليل البيانات",
-                skillGroup1Desc: "الأدوات الأساسية لتنظيم البيانات ونمذجتها وذكاء الأعمال:",
+                skillGroup1Desc: "معالجة البيانات والنمذجة الإحصائية وذكاء الأعمال التفاعلي:",
                 skillGroup2Title: "الذكاء الاصطناعي والأتمتة",
-                skillGroup2Desc: "بناء الوكلاء الأذكياء وتدفقات العمل والأنظمة المترابطة:",
+                skillGroup2Desc: "بناء الوكلاء الأذكياء ومحركات تدفق العمل ودمج النماذج اللغوية:",
                 skillGroup3Title: "الأدوات والكفاءات العملية",
-                skillGroup3Desc: "أدوات وممارسات تطبيقية لحل مشاكل المشروعات الحقيقية:",
+                skillGroup3Desc: "ممارسات وأدوات معتمدة في تسليم المشروعات الواقعية:",
 
-                // 10. USP
-                uspBadge: "الرؤية والوعد الشخصي",
-                uspStatement: "“من بيانات خام إلى قرارات واضحة.. ومن مهام مكررة إلى أتمتة ذكية.”",
-
-                // 7. Experience
+                // 7. Experience & Education
                 expSectionTitle: "الخبرة المهنية",
                 expJobTitle: "محلل بيانات حر ومطور AI Agents",
                 expType: "عمل حر (Freelance)",
-                expSummary: "مساعدة الشركات والأفراد في تحليل البيانات، وبناء لوحات التحكم، وأتمتة المهام الروتينية، وتطوير حلول عملية مدعومة بالذكاء الاصطناعي وفق احتياجاتهم الخاصة.",
-                expPoint1: "<strong>تحليل البيانات والتقارير:</strong> تحويل البيانات الخام إلى تقارير منظمة ورؤى تدعم نمو الأعمال.",
-                expPoint2: "<strong>لوحات التحكم التفاعلية:</strong> تصميم داشبوردات ذكية لمراقبة مؤشرات الأداء ومتابعة النمو لحظياً.",
-                expPoint3: "<strong>الأتمتة ووكلاء الذكاء الاصطناعي:</strong> بناء تدفقات عمل وأنظمة ذكية تختصر الجهد اليدوي وترفع الكفاءة.",
+                expSummary: "التعاون مع الشركات والمؤسسات لتحليل البيانات التشغيلية، وبناء لوحات المتابعة التنفيذية، وتنفيذ مسارات الأتمتة العملية.",
+                expPoint1: "<strong>ذكاء أعمال تنفيذي:</strong> تصميم داشبوردات ذكية لمؤشرات الأداء تغني عن التقارير اليدوية البطيئة.",
+                expPoint2: "<strong>بناء وربط البيانات:</strong> تنظيف ودمج مصادر البيانات المتعددة في قواعد وتقارير متينة وموثوقة.",
+                expPoint3: "<strong>أتمتة مخصصة:</strong> تطوير وكلاء ذكاء اصطناعي وتدفقات أوتوماتيكية ترفع كفاءة الفريق وتختصر ساعات العمل.",
 
-                // 8. Education
                 eduSectionTitle: "التعليم الأكاديمي",
                 eduUni: "جامعة المنوفية الأهلية",
                 eduFaculty: "كلية الحاسبات والذكاء الاصطناعي",
                 eduMajor: "إنترنت الأشياء وتحليل البيانات الضخمة (IoT & Big Data Analysis)",
-                eduDesc: "منحتني دراستي الأكاديمية أساساً متيناً في تحليل البيانات، البرمجة، قواعد البيانات، الذكاء الاصطناعي، وإنترنت الأشياء والتعامل مع مجموعات البيانات الكبيرة، بالإضافة إلى صقل مهارات حل المشكلات العملية من خلال المشاريع التقنية.",
+                eduDesc: "تأسيس أكاديمي متين يشمل تراكيب البيانات، قواعد البيانات، خوارزميات الذكاء الاصطناعي، شبكات إنترنت الأشياء والتعامل مع مجموعات البيانات الكبيرة وحل المشكلات الهندسية.",
 
-                // 9. What Makes Me Different
-                diffTitle: "ما يميزني عن غيري",
-                diff1Title: "البيانات تلتقي بالأتمتة",
-                diff1Desc: "لا أتعامل مع تحليل البيانات والأتمتة كخدمات منفصلة؛ بل أربطهما لمساعدة الشركة على الانتقال من مجرد فهم ما حدث إلى اتخاذ إجراء فوري.",
-                diff2Title: "الأعمال أولاً",
-                diff2Desc: "أركز على المشكلة والنتيجة المطلوبة قبل اختيار التقنية.",
-                diff3Title: "حلول عملية للاستخدام",
-                diff3Desc: "هدفي هو بناء حلول يمكن استخدامها فعلياً في العمل اليومي وليس مجرد عروض تقنية مبهرة شكلياً.",
-                diff4Title: "تواصل واضح وبسيط",
-                diff4Desc: "أحافظ على بساطة ووضوح كل خطوة من المناقشة الأولى حتى التسليم النهائي.",
-
-                // 11. Projects
-                projectsTitle: "أبرز الأعمال (Featured Work)",
-                projectsSubtitle: "مشاريع حقيقية توضح كيفية تحويل البيانات إلى قيمة تجارية ملموسة.",
-                projRealCat: "تحليل بيانات",
-                projRealTitle: "لوحة تحليلات اللياقة والعضويات",
-                projRealDesc: "<strong>التحدي:</strong> تشتت بيانات صالات اللياقة والاعتماد على التقارير اليدوية.<br><strong>الحل:</strong> لوحة تحكم Power BI مع تتبع آلي لمؤشرات الأداء، وتحليل العضويات وحاسبات الصحة.<br><strong>القيمة المضافة:</strong> القضاء على التقارير اليدوية، وتسريع القرارات الإدارية، ورؤية شاملة 360° للأداء.",
-                projERCat: "تحليلات الرعاية الصحية",
-                projERTitle: "لوحة تحكم قسم طوارئ المستشفى",
-                projERDesc: "<strong>التحدي:</strong> طول أوقات انتظار المرضى وصعوبة تتبع أوقات الذروة الاستيعابية.<br><strong>الحل:</strong> داشبورد عملياتي شامل لتتبع 471 مريضاً، وأوقات الانتظار (34.1 دقيقة)، ومعدل الرضا (5.31/10).<br><strong>القيمة المضافة:</strong> مراقبة الأداء التشغيلي لحظياً واتخاذ قرارات مدروسة لتحسين تجربة المرضى.",
-
-                // 12. Why Work With Me
+                // 8. Why Work With Me (Unified)
                 whyTitle: "لماذا تختار العمل معي؟",
-                why1Title: "دقة وموثوقية (Accurate)",
-                why1Desc: "تركيز كامل على نتائج نظيفة ومنظمة وموثوقة يمكن لأصحاب القرار الاعتماد عليها بثقة تامة.",
-                why2Title: "حلول عملية (Practical)",
-                why2Desc: "حلول مصممة حول الاحتياجات الحقيقية بعيداً عن التعقيد الزائد أو المسميات التقنية المعقدة.",
-                why3Title: "كفاءة عالية (Efficient)",
-                why3Desc: "استثمار الأتمتة حيثما توفر الوقت فعلياً، وتقضي على الأخطاء البشرية، وتوفر الجهد اليدوي.",
-                why4Title: "تركيز على قيمة العمل (Business Focused)",
-                why4Desc: "النظر إلى ما وراء الجانب التقني لفهم كيف يسهم كل تقرير وتدفق عمل في تعزيز أرباح ونمو النشاط التجاري.",
+                whySubtitle: "المبادئ الأساسية التي تحكم كل مشروع وتضمن أعلى عائد استثماري لأعمالك.",
+                why1Title: "تكامل التحليل مع الأتمتة",
+                why1Desc: "لا أتعامل مع التحليل والأتمتة كأمرين منفصلين؛ بل أربطهما معاً بحيث تتحول الرؤى المكتشفة فوراً إلى إجراءات عمل مؤتمتة وسلسة.",
+                why2Title: "الأعمال والنتائج أولاً",
+                why2Desc: "التقنية وسيلة وليست غاية. أركز دائماً على فهم التحدي التجاري، وقياس العائد، وتحقيق نتائج واضحة قبل اختيار أي أداة.",
+                why3Title: "حلول موثوقة وجاهزة للعمل",
+                why3Desc: "لا أقدم مجرد نماذج نظرية. كل لوحة تحكم ومسار أتمتة يتم اختباره وتنظيمه بدقة ليكون قابلاً للاستخدام اليومي المستدام.",
+                why4Title: "تواصل مباشر وشفاف",
+                why4Desc: "بعيداً عن المصطلحات المعقدة غير المفهومة، ستحصل على مراحل عمل واضحة، وتحديثات منتظمة، ودعم مستمر من البداية حتى التسليم.",
 
-                // 13. Pre-Contact CTA
-                ctaQuestion: "هل لديك بيانات لا تستفيد منها بالشكل الكافي؟ أو مهام مكررة ترغب في أتمتتها؟",
-                ctaSubtitle: "دعنا نحولها إلى حل عملي ذكي ومجدٍ.",
-                ctaButton: '<i class="fas fa-comment-dots" style="margin-left:8px;"></i> ابدأ محادثة الآن',
+                // 9. Pre-Contact CTA & Contact
+                ctaQuestion: "هل أنت جاهز لتحويل بياناتك المشتتة إلى قرارات واضحة ومربحة؟",
+                ctaSubtitle: "دعنا نناقش احتياجات عملك ونبني معاً حلاً ذكياً ومؤتمتاً يرفع كفاءة مؤسستك.",
+                ctaButton: '<i class="fas fa-comment-dots"></i> <span>ابدأ محادثة الآن</span>',
 
-                // 14. Contact
                 contactTitle: "لنتواصل معاً",
                 contactEmail: "البريد الإلكتروني",
                 contactPhone: "الهاتف / واتساب",
@@ -962,7 +915,7 @@
                 formName: "اسمك الكريم",
                 formEmail: "بريدك الإلكتروني",
                 formMessage: "تفاصيل رسالتك أو مشروعك",
-                formSubmit: '<i class="fas fa-paper-plane" style="margin-left:8px;"></i> إرسال الرسالة',
+                formSubmit: '<i class="fas fa-paper-plane"></i> <span>إرسال الرسالة</span>',
                 footerCopy: "&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة.",
                 formSuccess: "✅ تم إرسال رسالتك بنجاح! سأتواصل معك في أقرب وقت.",
             }
@@ -1012,7 +965,7 @@
             });
 
             document.title = lang === 'ar' 
-                ? 'يوسف أحمد | محلل بيانات ومطور وكلاء ذكاء اصطناعي' 
+                ? 'يوسف أحمد | محلل بيانات ومطور AI Agents' 
                 : 'Youssef Ahmed | Data Analyst & AI Agent Developer';
         }
 
@@ -1263,7 +1216,7 @@
         const typingEl = document.querySelector('#typingText h2');
         const titles = {
             en: ['Data Analyst', 'AI Agent Developer', 'Power BI Specialist', 'Automation Architect'],
-            ar: ['محلل بيانات', 'مطور AI Agents', 'متخصص Power BI', 'مهندس أتمتة']
+            ar: ['محلل بيانات', 'مطور AI Agents', 'متخصص Power BI', 'مهندس أتمتة ذكية']
         };
         let titleIdx = 0;
         let charIdx = 0;
