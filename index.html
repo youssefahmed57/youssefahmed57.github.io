@@ -707,24 +707,30 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <form class="contact-form" id="contactForm">
+                <!-- Contact Form (Direct Delivery to Email) -->
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/youssefahmed357402@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required>
                         <label for="name" class="form-label" data-key="formName">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                         <label for="email" class="form-label" data-key="formEmail">Your Email</label>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         <label for="message" class="form-label" data-key="formMessage">Your Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit" data-key="formSubmit">
                         <i class="fas fa-paper-plane"></i> <span>Send Message</span>
                     </button>
-                    <div id="formStatus" style="margin-top:1rem;text-align:center;display:none;"></div>
+                    <a href="https://wa.me/201008168639" target="_blank" class="btn btn-outline" style="width:100%;margin-top:0.75rem;display:flex;align-items:center;justify-content:center;gap:0.5rem;border-color:rgba(16,185,129,0.45);color:#10b981;text-decoration:none;" data-key="btnWhatsAppDirect" aria-label="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp" style="font-size:1.15rem;"></i> <span>WhatsApp Direct</span>
+                    </a>
+                    <div id="formStatus" style="margin-top:1.25rem;text-align:center;display:none;padding:0.75rem 1rem;border-radius:0.5rem;font-weight:600;font-size:0.92rem;line-height:1.5;"></div>
                 </form>
             </div>
         </div>
@@ -1006,8 +1012,11 @@
                 formEmail: "Your Email",
                 formMessage: "Your Message",
                 formSubmit: '<i class="fas fa-paper-plane"></i> <span>Send Message</span>',
-                footerCopy: '&copy; 2024 Youssef Ahmed. All rights reserved. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="GitHub Repository"><i class="fab fa-github"></i> GitHub Repo</a>',
+                formSending: "Sending...",
                 formSuccess: "✅ Message sent successfully! I'll get back to you soon.",
+                formActivation: "📩 Message sent! Please check your email inbox to click the one-time activation link from FormSubmit.",
+                btnWhatsAppDirect: '<i class="fab fa-whatsapp"></i> <span>WhatsApp Direct</span>',
+                footerCopy: '&copy; 2024 Youssef Ahmed. All rights reserved. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="GitHub Repository"><i class="fab fa-github"></i> GitHub Repo</a>',
             },
             ar: {
                 logoName: "ي.أحمد",
@@ -1144,8 +1153,11 @@
                 formEmail: "بريدك الإلكتروني",
                 formMessage: "تفاصيل رسالتك أو مشروعك",
                 formSubmit: '<i class="fas fa-paper-plane"></i> <span>إرسال الرسالة</span>',
-                footerCopy: '&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="مستودع GitHub"><i class="fab fa-github"></i> مستودع GitHub</a>',
+                formSending: "جاري الإرسال...",
                 formSuccess: "✅ تم إرسال رسالتك بنجاح! سأتواصل معك في أقرب وقت.",
+                formActivation: "📩 تم استقبال رسالتك! يرجى مراجعة بريدك الإلكتروني لتفعيل استقبال الرسائل بنقرة واحدة لأول مرة.",
+                btnWhatsAppDirect: '<i class="fab fa-whatsapp"></i> <span>واتساب مباشر</span>',
+                footerCopy: '&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="مستودع GitHub"><i class="fab fa-github"></i> مستودع GitHub</a>',
             }
         };
 
@@ -1347,14 +1359,75 @@
         // ============================================================
         // CONTACT FORM
         // ============================================================
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const t = translations[currentLang];
-            formStatus.style.display = 'block';
-            formStatus.innerHTML = t.formSuccess;
-            formStatus.style.color = '#10b981';
-            contactForm.reset();
-            setTimeout(() => { formStatus.style.display = 'none'; }, 6000);
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnHtml = submitBtn.innerHTML;
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const message = messageInput.value.trim();
+
+            if (!name || !email || !message) return;
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>' + (t.formSending || (currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...')) + '</span>';
+            formStatus.style.display = 'none';
+
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/youssefahmed357402@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message,
+                        _subject: `📩 New Portfolio Message from ${name}`,
+                        _template: 'table',
+                        _captcha: 'false'
+                    })
+                });
+
+                const result = await response.json();
+
+                formStatus.style.display = 'block';
+                if (response.ok || result.success === 'true' || result.success === true) {
+                    formStatus.style.color = '#10b981';
+                    formStatus.style.background = 'rgba(16, 185, 129, 0.12)';
+                    formStatus.style.border = '1px solid rgba(16, 185, 129, 0.35)';
+                    formStatus.innerHTML = t.formSuccess;
+                    contactForm.reset();
+                } else if (result.message && result.message.toLowerCase().includes('activation')) {
+                    formStatus.style.color = '#06b6d4';
+                    formStatus.style.background = 'rgba(6, 182, 212, 0.12)';
+                    formStatus.style.border = '1px solid rgba(6, 182, 212, 0.35)';
+                    formStatus.innerHTML = t.formActivation;
+                    contactForm.reset();
+                } else {
+                    throw new Error(result.message || 'Submission failed');
+                }
+            } catch (err) {
+                console.error('Form submit error:', err);
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#ef4444';
+                formStatus.style.background = 'rgba(239, 68, 68, 0.12)';
+                formStatus.style.border = '1px solid rgba(239, 68, 68, 0.35)';
+                formStatus.innerHTML = currentLang === 'ar'
+                    ? '⚠️ تعذر الإرسال التلقائي. يمكنك مراسلتي مباشرة عبر <a href="https://wa.me/201008168639" target="_blank" style="color:#10b981;font-weight:700;text-decoration:underline;">واتساب</a> أو <a href="mailto:youssefahmed357402@gmail.com" style="color:var(--accent-cyan);font-weight:700;text-decoration:underline;">الإيميل مباشرة</a>.'
+                    : '⚠️ Unable to send automatically. You can reach me directly on <a href="https://wa.me/201008168639" target="_blank" style="color:#10b981;font-weight:700;text-decoration:underline;">WhatsApp</a> or <a href="mailto:youssefahmed357402@gmail.com" style="color:var(--accent-cyan);font-weight:700;text-decoration:underline;">Email</a>.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHtml;
+            }
         });
 
         // ============================================================
