@@ -54,6 +54,9 @@
 
             <!-- Controls -->
             <div class="controls">
+                <a href="https://github.com/youssefahmed57" target="_blank" class="theme-toggle" aria-label="GitHub Profile" title="GitHub" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+                    <i class="fab fa-github" style="font-size:1.15rem;"></i>
+                </a>
                 <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
                     <span style="font-weight:700; font-size: 0.85rem;">AR</span>
                 </button>
@@ -362,10 +365,11 @@
 
                 <!-- Project 3: ApexML AutoML Platform -->
                 <div class="project-card animate-on-scroll fade-in-up" data-category="ml">
-                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('apexml-platform.png', '')">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('apexml-platform.png', 'https://github.com/youssefahmed57/ApexML-Studio')">
                         <img class="project-img" src="apexml-thumb.jpg" alt="ApexML — AutoML & Analytics Platform">
                         <div class="project-overlay">
                             <span class="project-link" aria-label="Zoom Full Interface"><i class="fas fa-search-plus"></i></span>
+                            <a href="https://github.com/youssefahmed57/ApexML-Studio" target="_blank" onclick="event.stopPropagation();" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -677,6 +681,13 @@
                         </div>
                     </div>
                     <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-details">
+                            <h4 data-key="contactGithub">GitHub</h4>
+                            <p><a href="https://github.com/youssefahmed57" target="_blank" style="color:var(--accent-cyan);">github.com/youssefahmed57</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-store"></i></div>
                         <div class="contact-details">
                             <h4 data-key="contactKhamsat">Khamsat</h4>
@@ -816,6 +827,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="social-links">
+                <a href="https://github.com/youssefahmed57" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/youssef-ahmed-zeus" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://wa.me/201008168639" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://khamsat.com/user/software_house" target="_blank" class="social-link" aria-label="Khamsat"><i class="fas fa-store"></i></a>
@@ -970,13 +982,14 @@
                 contactTitle: "Let’s Connect",
                 contactEmail: "Email",
                 contactPhone: "Phone / WhatsApp",
+                contactGithub: "GitHub",
                 contactKhamsat: "Khamsat",
                 qrCaption: "Scan to connect on LinkedIn",
                 formName: "Your Name",
                 formEmail: "Your Email",
                 formMessage: "Your Message",
                 formSubmit: '<i class="fas fa-paper-plane"></i> <span>Send Message</span>',
-                footerCopy: "&copy; 2024 Youssef Ahmed. All rights reserved.",
+                footerCopy: '&copy; 2024 Youssef Ahmed. All rights reserved. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="GitHub Repository"><i class="fab fa-github"></i> GitHub Repo</a>',
                 formSuccess: "✅ Message sent successfully! I'll get back to you soon.",
             },
             ar: {
@@ -1106,13 +1119,14 @@
                 contactTitle: "لنتواصل معاً",
                 contactEmail: "البريد الإلكتروني",
                 contactPhone: "الهاتف / واتساب",
+                contactGithub: "GitHub",
                 contactKhamsat: "خمسات",
                 qrCaption: "امسح الرمز للتواصل عبر LinkedIn",
                 formName: "اسمك الكريم",
                 formEmail: "بريدك الإلكتروني",
                 formMessage: "تفاصيل رسالتك أو مشروعك",
                 formSubmit: '<i class="fas fa-paper-plane"></i> <span>إرسال الرسالة</span>',
-                footerCopy: "&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة.",
+                footerCopy: '&copy; 2024 يوسف أحمد. جميع الحقوق محفوظة. &bull; <a href="https://github.com/youssefahmed57/youssefahmed57.github.io" target="_blank" style="color:var(--accent-cyan);text-decoration:none;" aria-label="مستودع GitHub"><i class="fab fa-github"></i> مستودع GitHub</a>',
                 formSuccess: "✅ تم إرسال رسالتك بنجاح! سأتواصل معك في أقرب وقت.",
             }
         };
@@ -1165,6 +1179,10 @@
             document.title = lang === 'ar' 
                 ? 'يوسف أحمد | محلل بيانات ومطور AI Agents' 
                 : 'Youssef Ahmed | Data Analyst & AI Agent Developer';
+
+            if (typeof updateModalLink === 'function') {
+                updateModalLink();
+            }
         }
 
         langToggle.addEventListener('click', () => {
@@ -1471,27 +1489,38 @@
     var currentGalleryImages = [];
     var currentGalleryTitles = [];
     var currentGalleryIndex = 0;
+    var currentGalleryUrl = '';
 
-    function openGalleryModal(images, startIndex, linkedinUrl, titles) {
+    function updateModalLink() {
+        var link = document.getElementById('imageModalLink');
+        if (!link) return;
+        if (currentGalleryUrl && currentGalleryUrl.trim() !== '' && currentGalleryUrl !== '#') {
+            link.href = currentGalleryUrl;
+            link.style.display = 'flex';
+            var isArabic = document.documentElement.getAttribute('lang') === 'ar' || (document.body && document.body.classList.contains('rtl'));
+            if (currentGalleryUrl.includes('github.com')) {
+                link.innerHTML = '<i class="fab fa-github"></i> <span>' + (isArabic ? 'عرض الكود على GitHub' : 'View Code on GitHub') + '</span>';
+            } else {
+                link.innerHTML = '<i class="fab fa-linkedin-in"></i> <span>' + (isArabic ? 'عرض على LinkedIn' : 'View on LinkedIn') + '</span>';
+            }
+        } else {
+            link.style.display = 'none';
+        }
+    }
+
+    function openGalleryModal(images, startIndex, targetUrl, titles) {
         currentGalleryImages = Array.isArray(images) ? images : [images];
         currentGalleryTitles = Array.isArray(titles) ? titles : [];
         currentGalleryIndex = startIndex || 0;
+        currentGalleryUrl = targetUrl || '';
 
-        var link = document.getElementById('imageModalLink');
-        if (link) {
-            if (linkedinUrl && linkedinUrl.trim() !== '' && linkedinUrl !== '#') {
-                link.href = linkedinUrl;
-                link.style.display = 'flex';
-            } else {
-                link.style.display = 'none';
-            }
-        }
+        updateModalLink();
         renderGalleryState();
         document.getElementById('imageModal').style.display = 'flex';
     }
 
-    function openImageModal(imgSrc, linkedinUrl) {
-        openGalleryModal([imgSrc], 0, linkedinUrl, []);
+    function openImageModal(imgSrc, targetUrl) {
+        openGalleryModal([imgSrc], 0, targetUrl, []);
     }
 
     function renderGalleryState() {
