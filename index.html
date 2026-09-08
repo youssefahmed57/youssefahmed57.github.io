@@ -711,6 +711,8 @@
                 <form class="contact-form" id="contactForm" action="https://formsubmit.co/youssefahmed357402@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://youssefahmed57.github.io/?sent=true#contact">
+                    <input type="hidden" name="_autoresponse" value="شكراً لتواصلك مع يوسف أحمد. تم استلام رسالتك بنجاح وسأتواصل معك في أقرب وقت. / Thank you for contacting Youssef Ahmed. Your message has been received!">
                     <input type="text" name="_honey" style="display:none">
                     <div class="form-group">
                         <label for="name" class="form-label"><i class="fas fa-user"></i> <span data-key="formName">Your Name</span></label>
@@ -1375,8 +1377,18 @@
         // ============================================================
         // CONTACT FORM
         // ============================================================
+        // Check if redirected back with success from native submission
+        if (window.location.search.includes('sent=true')) {
+            const t = translations[currentLang] || translations.ar;
+            formStatus.style.display = 'block';
+            formStatus.style.color = '#10b981';
+            formStatus.style.background = 'rgba(16, 185, 129, 0.12)';
+            formStatus.style.border = '1px solid rgba(16, 185, 129, 0.35)';
+            formStatus.innerHTML = t.formSuccess || '✅ تم إرسال رسالتك بنجاح! سأتواصل معك في أقرب وقت.';
+            window.history.replaceState({}, document.title, window.location.pathname + '#contact');
+        }
+
         contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
             const t = translations[currentLang];
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnHtml = submitBtn.innerHTML;
@@ -1390,6 +1402,8 @@
             const message = messageInput.value.trim();
 
             if (!name || !email || !message) return;
+
+            e.preventDefault();
 
             // Loading state
             submitBtn.disabled = true;
@@ -1409,14 +1423,21 @@
                         message: message,
                         _subject: `📩 New Portfolio Message from ${name}`,
                         _template: 'table',
-                        _captcha: 'false'
+                        _captcha: 'false',
+                        _autoresponse: currentLang === 'ar'
+                            ? 'شكراً لتواصلك مع يوسف أحمد. تم استلام رسالتك بنجاح وسأتواصل معك في أقرب وقت.'
+                            : 'Thank you for contacting Youssef Ahmed. Your message has been received and I will get back to you shortly.'
                     })
                 });
+
+                if (!response.ok) {
+                    throw new Error('Network response status: ' + response.status);
+                }
 
                 const result = await response.json();
 
                 formStatus.style.display = 'block';
-                if (response.ok || result.success === 'true' || result.success === true) {
+                if (result.success === 'true' || result.success === true) {
                     formStatus.style.color = '#10b981';
                     formStatus.style.background = 'rgba(16, 185, 129, 0.12)';
                     formStatus.style.border = '1px solid rgba(16, 185, 129, 0.35)';
@@ -1432,14 +1453,10 @@
                     throw new Error(result.message || 'Submission failed');
                 }
             } catch (err) {
-                console.error('Form submit error:', err);
-                formStatus.style.display = 'block';
-                formStatus.style.color = '#ef4444';
-                formStatus.style.background = 'rgba(239, 68, 68, 0.12)';
-                formStatus.style.border = '1px solid rgba(239, 68, 68, 0.35)';
-                formStatus.innerHTML = currentLang === 'ar'
-                    ? '⚠️ تعذر الإرسال التلقائي. يمكنك مراسلتي مباشرة عبر <a href="https://wa.me/201008168639" target="_blank" style="color:#10b981;font-weight:700;text-decoration:underline;">واتساب</a> أو <a href="mailto:youssefahmed357402@gmail.com" style="color:var(--accent-cyan);font-weight:700;text-decoration:underline;">الإيميل مباشرة</a>.'
-                    : '⚠️ Unable to send automatically. You can reach me directly on <a href="https://wa.me/201008168639" target="_blank" style="color:#10b981;font-weight:700;text-decoration:underline;">WhatsApp</a> or <a href="mailto:youssefahmed357402@gmail.com" style="color:var(--accent-cyan);font-weight:700;text-decoration:underline;">Email</a>.';
+                console.warn('AJAX submission failed or blocked by client; falling back to direct native submission:', err);
+                // Guaranteed fallback: submit natively to FormSubmit (bypasses adblockers/CORS completely)
+                contactForm.submit();
+                return;
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnHtml;
