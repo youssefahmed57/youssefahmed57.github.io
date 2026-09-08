@@ -713,24 +713,24 @@
                     <input type="hidden" name="_template" value="table">
                     <input type="text" name="_honey" style="display:none">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" required>
-                        <label for="name" class="form-label" data-key="formName">Your Name</label>
+                        <label for="name" class="form-label"><i class="fas fa-user"></i> <span data-key="formName">Your Name</span></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="e.g. John Doe" required autocomplete="name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" required>
-                        <label for="email" class="form-label" data-key="formEmail">Your Email</label>
+                        <label for="email" class="form-label"><i class="fas fa-envelope"></i> <span data-key="formEmail">Your Email</span></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        <label for="message" class="form-label" data-key="formMessage">Your Message</label>
+                        <label for="message" class="form-label"><i class="fas fa-comment-alt"></i> <span data-key="formMessage">Your Message</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="How can I help with your data or AI project?" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit" data-key="formSubmit">
                         <i class="fas fa-paper-plane"></i> <span>Send Message</span>
                     </button>
-                    <a href="https://wa.me/201008168639" target="_blank" class="btn btn-outline" style="width:100%;margin-top:0.75rem;display:flex;align-items:center;justify-content:center;gap:0.5rem;border-color:rgba(16,185,129,0.45);color:#10b981;text-decoration:none;" data-key="btnWhatsAppDirect" aria-label="Chat on WhatsApp">
+                    <a href="https://wa.me/201008168639" target="_blank" class="btn btn-whatsapp-direct" data-key="btnWhatsAppDirect" aria-label="Chat on WhatsApp">
                         <i class="fab fa-whatsapp" style="font-size:1.15rem;"></i> <span>WhatsApp Direct</span>
                     </a>
-                    <div id="formStatus" style="margin-top:1.25rem;text-align:center;display:none;padding:0.75rem 1rem;border-radius:0.5rem;font-weight:600;font-size:0.92rem;line-height:1.5;"></div>
+                    <div id="formStatus" style="display:none;"></div>
                 </form>
             </div>
         </div>
@@ -1205,6 +1205,22 @@
                     el.innerHTML = t[key];
                 }
             });
+
+            // Update input placeholders
+            const nameEl = document.getElementById('name');
+            const emailEl = document.getElementById('email');
+            const messageEl = document.getElementById('message');
+            if (nameEl && emailEl && messageEl) {
+                if (lang === 'ar') {
+                    nameEl.placeholder = "مثال: يوسف أحمد";
+                    emailEl.placeholder = "name@example.com";
+                    messageEl.placeholder = "اكتب تفاصيل مشروعك أو استفسارك هنا...";
+                } else {
+                    nameEl.placeholder = "e.g. John Doe";
+                    emailEl.placeholder = "name@example.com";
+                    messageEl.placeholder = "How can I help with your data or AI project?";
+                }
+            }
 
             document.title = lang === 'ar' 
                 ? 'يوسف أحمد | محلل بيانات ومطور AI Agents' 
