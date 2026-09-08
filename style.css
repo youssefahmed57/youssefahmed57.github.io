@@ -564,6 +564,7 @@ body.light-mode .hero-subtitle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     padding: 0.875rem 2rem;
     border-radius: var(--border-radius-lg);
     font-weight: 600;
@@ -2129,11 +2130,75 @@ body.rtl {
     letter-spacing: 0 !important;
 }
 
-html[dir="rtl"] *,
-body[dir="rtl"] *,
-body.rtl * {
+/* Apply Arabic font strictly to typography and content elements */
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4, html[dir="rtl"] h5, html[dir="rtl"] h6,
+html[dir="rtl"] p, html[dir="rtl"] a, html[dir="rtl"] span, html[dir="rtl"] button, html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] label,
+body[dir="rtl"] h1, body[dir="rtl"] h2, body[dir="rtl"] h3, body[dir="rtl"] h4, body[dir="rtl"] h5, body[dir="rtl"] h6,
+body[dir="rtl"] p, body[dir="rtl"] a, body[dir="rtl"] span, body[dir="rtl"] button, body[dir="rtl"] input, body[dir="rtl"] textarea, body[dir="rtl"] label,
+body.rtl h1, body.rtl h2, body.rtl h3, body.rtl h4, body.rtl h5, body.rtl h6,
+body.rtl p, body.rtl a, body.rtl span, body.rtl button, body.rtl input, body.rtl textarea, body.rtl label {
     font-family: var(--font-ar);
     letter-spacing: 0 !important;
+}
+
+/* CRITICAL: Protect All Icon Fonts from Arabic Font Override */
+html[dir="rtl"] i,
+body[dir="rtl"] i,
+body.rtl i,
+html[dir="rtl"] [class*="fa-"],
+body[dir="rtl"] [class*="fa-"],
+body.rtl [class*="fa-"],
+html[dir="rtl"] [class*="devicon-"],
+body[dir="rtl"] [class*="devicon-"],
+body.rtl [class*="devicon-"] {
+    letter-spacing: normal !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+html[dir="rtl"] .fa,
+html[dir="rtl"] .fas,
+html[dir="rtl"] .fa-solid,
+body[dir="rtl"] .fa,
+body[dir="rtl"] .fas,
+body[dir="rtl"] .fa-solid,
+body.rtl .fa,
+body.rtl .fas,
+body.rtl .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+
+html[dir="rtl"] .far,
+html[dir="rtl"] .fa-regular,
+body[dir="rtl"] .far,
+body[dir="rtl"] .fa-regular,
+body.rtl .far,
+body.rtl .fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400 !important;
+}
+
+html[dir="rtl"] .fab,
+html[dir="rtl"] .fa-brands,
+body[dir="rtl"] .fab,
+body[dir="rtl"] .fa-brands,
+body.rtl .fab,
+body.rtl .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+html[dir="rtl"] [class^="devicon-"],
+html[dir="rtl"] [class*=" devicon-"],
+body[dir="rtl"] [class^="devicon-"],
+body[dir="rtl"] [class*=" devicon-"],
+body.rtl [class^="devicon-"],
+body.rtl [class*=" devicon-"] {
+    font-family: "devicon" !important;
 }
 
 html[dir="rtl"] .hero-subtitle,
