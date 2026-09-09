@@ -408,6 +408,41 @@
                     </div>
                 </div>
 
+                <!-- Project 2: n8n AI Lead Qualification & CRM Automation Pipeline -->
+                <div class="project-card animate-on-scroll fade-in-up" data-category="automation">
+                    <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openImageModal('n8n-workflow-pipeline.jpg', 'https://github.com/youssefahmed57', '')">
+                        <img class="project-img" src="n8n-workflow-thumb.jpg" alt="Automated Lead Qualification & CRM Pipeline (n8n & AI Agent)" loading="lazy">
+                        
+                        <!-- Workflow badge indicator -->
+                        <span style="position:absolute;top:12px;left:12px;z-index:2;font-size:0.78rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:1rem;background:rgba(10,10,26,0.88);backdrop-filter:blur(6px);border:1px solid rgba(124,58,237,0.5);color:#a78bfa;display:flex;align-items:center;gap:0.45rem;box-shadow:0 4px 14px rgba(0,0,0,0.6);">
+                            <i class="fas fa-network-wired"></i> <span data-key="projN8nBadge">n8n Workflow</span>
+                        </span>
+
+                        <div class="project-overlay">
+                            <span class="project-link" aria-label="Inspect Full Workflow Diagram" title="Inspect Full Workflow Diagram"><i class="fas fa-search-plus"></i></span>
+                            <a href="https://github.com/youssefahmed57" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="project-link" aria-label="View on GitHub" title="View Source on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category" data-key="projN8nCat">AI & Workflow Automation</span>
+                        <h4 class="project-title" data-key="projN8nTitle">Automated Lead Qualification & CRM Pipeline</h4>
+                        <div class="project-desc-block">
+                            <p class="project-desc-item" data-key="projN8nChallenge"><strong>Challenge:</strong> Inbound leads across forms and messaging channels required manual qualification, causing delayed response times (4+ hours) and missed opportunities.</p>
+                            <p class="project-desc-item" data-key="projN8nSolution"><strong>Solution:</strong> An autonomous n8n automation pipeline integrating OpenAI GPT-4 for real-time lead scoring, conditional routing, and instant multi-channel alerts.</p>
+                            <p class="project-desc-item" data-key="projN8nBuilt"><strong>What I Built:</strong> Custom n8n workflow connecting Webhook triggers, prompt-engineered GPT-4 classification, Google Sheets/CRM database synchronization, and instant WhatsApp & Telegram team dispatch.</p>
+                            <p class="project-desc-item" data-key="projN8nOutcome"><strong>Outcome / Value:</strong> Slashed response latency from 4 hours to under 30 seconds, automated 100% of lead routing, and ensured immediate sales engagement for high-priority prospects.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Webhooks</span>
+                            <span class="tech-tag">CRM Sync</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                            <span class="tech-tag">Telegram Bot</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 2: Power BI Fitness Dashboard -->
                 <div class="project-card animate-on-scroll fade-in-up" data-category="data">
                     <div class="project-img-container" style="position:relative;cursor:pointer;" onclick="openVideoModal()">
@@ -882,6 +917,70 @@
         </div>
     </section>
 
+    <!-- ========== 11. SMART FAQ SECTION ========== -->
+    <section class="section faq-section" id="faq">
+        <div class="container" style="max-width: 950px;">
+            <h2 class="section-title gradient-text" data-key="faqTitle">Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-key="faqSubtitle">
+                Clear answers to common questions about data formats, privacy, delivery timelines, and post-launch support.
+            </p>
+
+            <div class="faq-accordion">
+                <!-- FAQ Item 1: Data Formats -->
+                <details class="faq-item animate-on-scroll fade-in-up" open>
+                    <summary class="faq-question">
+                        <span class="faq-question-text" data-key="faq1Q">What data formats and platforms can you work with?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p data-key="faq1A">
+                            I work with a wide range of data sources: relational databases (PostgreSQL, MySQL, SQL Server), spreadsheets (Excel, Power Query, CSV), cloud APIs (REST, JSON, Webhooks), and reporting platforms. Whether your data is already structured in a database or scattered across manual Excel files, I handle extraction, cleaning, and modeling end-to-end.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2: Security & NDA -->
+                <details class="faq-item animate-on-scroll fade-in-up">
+                    <summary class="faq-question">
+                        <span class="faq-question-text" data-key="faq2Q">How do you guarantee data confidentiality and business security?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p data-key="faq2A">
+                            Data privacy is an absolute priority. I am fully prepared to sign a formal Non-Disclosure Agreement (NDA) before reviewing any files. All credentials, API tokens, and records remain encrypted, client data is never shared or used publicly without explicit anonymization, and all workflows strictly adhere to professional confidentiality standards.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3: Delivery Timeline -->
+                <details class="faq-item animate-on-scroll fade-in-up">
+                    <summary class="faq-question">
+                        <span class="faq-question-text" data-key="faq3Q">How long does it take to deliver a Power BI dashboard or an n8n workflow?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p data-key="faq3A">
+                            Standard projects typically take between 3 to 7 business days, depending on dataset cleanliness, metric complexity, and required integrations. I follow structured milestones: requirements alignment and initial wireframe within 48 hours, draft delivery for feedback, and final deployment with documentation and testing.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4: Training & Support -->
+                <details class="faq-item animate-on-scroll fade-in-up">
+                    <summary class="faq-question">
+                        <span class="faq-question-text" data-key="faq4Q">Do you provide training and support for our team after delivery?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p data-key="faq4A">
+                            Yes, every project includes a live walkthrough session and a concise video or document guide demonstrating how to use, refresh, and maintain the solution. I also provide a complimentary post-delivery support window (typically 14 to 30 days) to address any questions, optimize workflows, and ensure dependable daily operation.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== 10. CONTACT & QR CODE ========== -->
     <section class="section" id="contact">
         <div class="container">
@@ -1171,6 +1270,15 @@
                 projApexBuilt: "<strong>What I Built:</strong> Full-stack Streamlit app integrating Scikit-learn pipelines, interactive Plotly visualizations, comprehensive evaluation metrics (ROC-AUC, F1, RMSE), and instant CSV prediction exports.",
                 projApexOutcome: "<strong>Outcome / Value:</strong> Streamlines model experimentation from raw datasets to evaluated models, enabling rapid baseline benchmarking and evidence-based decision-making.",
 
+                // Project 2: n8n AI Automation
+                projN8nCat: "AI & Workflow Automation",
+                projN8nTitle: "Automated Lead Qualification & CRM Pipeline",
+                projN8nBadge: "n8n Workflow",
+                projN8nChallenge: "<strong>Challenge:</strong> Inbound leads across forms and messaging channels required manual qualification, causing delayed response times (4+ hours) and missed opportunities.",
+                projN8nSolution: "<strong>Solution:</strong> An autonomous n8n automation pipeline integrating OpenAI GPT-4 for real-time lead scoring, conditional routing, and instant multi-channel alerts.",
+                projN8nBuilt: "<strong>What I Built:</strong> Custom n8n workflow connecting Webhook triggers, prompt-engineered GPT-4 classification, Google Sheets/CRM database synchronization, and instant WhatsApp & Telegram team dispatch.",
+                projN8nOutcome: "<strong>Outcome / Value:</strong> Slashed response latency from 4 hours to under 30 seconds, automated 100% of lead routing, and ensured immediate sales engagement for high-priority prospects.",
+
                 // Project 2: Fitness Dashboard
                 projRealCat: "Business Intelligence",
                 projRealTitle: "Fitness & Membership Analytics Dashboard",
@@ -1264,6 +1372,18 @@
                 review6Service: '<i class="fas fa-chart-pie"></i> Data Analysis via Power BI',
                 testimonialsKhamsatBtn: '<i class="fas fa-store"></i> <span>View All Reviews on Khamsat</span> <i class="fas fa-arrow-up-right-from-square"></i>',
 
+                // 11. FAQ Section
+                faqTitle: "Frequently Asked Questions",
+                faqSubtitle: "Clear answers to common questions about data formats, privacy, delivery timelines, and post-launch support.",
+                faq1Q: "What data formats and platforms can you work with?",
+                faq1A: "I work with a wide range of data sources: relational databases (PostgreSQL, MySQL, SQL Server), spreadsheets (Excel, Power Query, CSV), cloud APIs (REST, JSON, Webhooks), and reporting platforms. Whether your data is already structured in a database or scattered across manual Excel files, I handle extraction, cleaning, and modeling end-to-end.",
+                faq2Q: "How do you guarantee data confidentiality and business security?",
+                faq2A: "Data privacy is an absolute priority. I am fully prepared to sign a formal Non-Disclosure Agreement (NDA) before reviewing any files. All credentials, API tokens, and records remain encrypted, client data is never shared or used publicly without explicit anonymization, and all workflows strictly adhere to professional confidentiality standards.",
+                faq3Q: "How long does it take to deliver a Power BI dashboard or an n8n workflow?",
+                faq3A: "Standard projects typically take between 3 to 7 business days, depending on dataset cleanliness, metric complexity, and required integrations. I follow structured milestones: requirements alignment and initial wireframe within 48 hours, draft delivery for feedback, and final deployment with documentation and testing.",
+                faq4Q: "Do you provide training and support for our team after delivery?",
+                faq4A: "Yes, every project includes a live walkthrough session and a concise video or document guide demonstrating how to use, refresh, and maintain the solution. I also provide a complimentary post-delivery support window (typically 14 to 30 days) to address any questions, optimize workflows, and ensure dependable daily operation.",
+
                 // 10. Pre-Contact CTA & Contact
                 ctaQuestion: "Ready to turn scattered data into confident business decisions?",
                 ctaSubtitle: "Let’s discuss your current challenges and build a practical, automated solution.",
@@ -1351,6 +1471,15 @@
                 projApexSolution: "<strong>الحل:</strong> منصة AutoML تفاعلية متكاملة تقدم فحصاً فورياً للبيانات، معالجة ذكية مؤتمتة، مقارنة معيارية لنماذج متعددة، وتنبؤات دفعية وفورية.",
                 projApexBuilt: "<strong>ما قمت ببنائه:</strong> تطبيق متكامل بـ Streamlit يربط خطوط معالجة Scikit-learn، ورسوم Plotly التفاعلية، ومقاييس تقييم دقيقة، وتصديراً فورياً للتنبؤات.",
                 projApexOutcome: "<strong>الأثر والقيمة:</strong> تسريع دورة تجريب النماذج من البيانات الخام إلى النماذج المقيّمة بدقة، مما يتيح مقارنة الخوارزميات واتخاذ قرارات مدروسة.",
+
+                // Project 2: n8n AI Automation
+                projN8nCat: "أتمتة الذكاء الاصطناعي وتدفقات العمل",
+                projN8nTitle: "مسار أتمتة وتأهيل العملاء المحتملين وتحديث الـ CRM",
+                projN8nBadge: "مسار n8n الذكي",
+                projN8nChallenge: "<strong>التحدي:</strong> التدفق المستمر للعملاء المحتملين عبر النماذج والقنوات يتطلب فرزاً وتأهيلاً يدوياً بطيئاً يستغرق أكثر من 4 ساعات، مما يؤدي لفقدان فرص بيعية مؤكدة.",
+                projN8nSolution: "<strong>الحل:</strong> مسار أتمتة ذكي ومستقل عبر n8n يدمج نماذج OpenAI لتقييم وفحص جودة العملاء فورياً، والتوجيه الشرطي، وإرسال تنبيهات لحظية متعددة القنوات.",
+                projN8nBuilt: "<strong>ما قمت ببنائه:</strong> مسار عمل متكامل يربط Webhook باستقبال البيانات، وهندسة أوامر لـ GPT-4 لتحديد نية العميل وتقييم أهميته، وتحديث قواعد بيانات Google Sheets والـ CRM، وإرسال إشعارات فورية عبر واتساب وتليجرام.",
+                projN8nOutcome: "<strong>الأثر والقيمة:</strong> تقليص زمن الاستجابة من 4 ساعات إلى أقل من 30 ثانية، وأتمتة 100% من فرز البيانات وتوجيهها، ومتابعة فورية للعملاء الأكثر جاهزية للشراء.",
 
                 // Project 2: Fitness Dashboard
                 projRealCat: "ذكاء الأعمال وتحليل البيانات",
@@ -1444,6 +1573,18 @@
                 review6Author: "علوي م.",
                 review6Service: '<i class="fas fa-chart-pie"></i> تحليل البيانات بواسطة Power BI',
                 testimonialsKhamsatBtn: '<i class="fas fa-store"></i> <span>مشاهدة جميع التقييمات على خمسات</span> <i class="fas fa-arrow-up-right-from-square"></i>',
+
+                // 11. FAQ Section
+                faqTitle: "الأسئلة الشائعة",
+                faqSubtitle: "إجابات واضحة ومباشرة عن أبرز ما يشغل بالك حول مصادر البيانات، الأمان، الجداول الزمنية، والدعم الفني.",
+                faq1Q: "ما هي مصادر وصيغ البيانات التي يمكنك التعامل معها؟",
+                faq1A: "أتعامل مع مختلف مصادر وصيغ البيانات سواء كانت قواعد بيانات علائقية (PostgreSQL, MySQL, SQL Server)، أو ملفات جداول ممتدة (Excel مع Power Query، وCSV)، أو واجهات برمجية سحابية (REST APIs, Webhooks, JSON). سواء كانت بياناتك منظمة أو مشتتة في ملفات Excel متعددة، أقوم باستخراجها وتنظيفها وربطها بالكامل.",
+                faq2Q: "كيف تضمن سرية وأمان بيانات شركتنا وخصوصيتها؟",
+                faq2A: "سرية وخصوصية البيانات خط أحمر وأولوية قصوى. أنا مستعد تماماً لتوقيع اتفاقية عدم إفصاح رسمية (NDA) قبل الاطلاع على أي ملفات. تُحفظ كافة البيانات ومفاتيح الربط مشفرة ولا يتم مشاركتها أو استخدامها كنماذج عامة إطلاقاً دون تعمية كاملة (Anonymization) وبموافقتكم، مع الالتزام التام بأعلى معايير الأمان المهني.",
+                faq3Q: "كم يستغرق تسليم لوحة تحكم Power BI أو مسار أتمتة n8n؟",
+                faq3A: "المشاريع المعتادة تستغرق عادة من 3 إلى 7 أيام عمل، حسب حجم البيانات ونظافتها وعدد المؤشرات ونقاط الربط المطلوبة. أعمل بمنهجية مراحل واضحة: فهم المتطلبات والنموذج الأولي خلال 48 ساعة، يليه تسليم مسودة للمراجعة، ثم التسليم النهائي والاختبار والتوثيق.",
+                faq4Q: "هل تقدم تدريباً ودعماً فنياً لفريق العمل بعد التسليم؟",
+                faq4A: "نعم بكل تأكيد؛ يتضمن كل مشروع جلسة شرح مباشرة ودليلاً توضيحياً (فيديو أو مستند) يوضح كيفية استخدام وتحديث اللوحة أو مسار الأتمتة بكل سهولة. كما أقدم فترة دعم فني مجانية بعد التسليم (من 14 إلى 30 يوماً) لضمان استقرار العمل والإجابة على أي استفسارات أو تعديلات تشغيلية.",
 
                 // 10. Pre-Contact CTA & Contact
                 ctaQuestion: "هل أنت جاهز لتحويل بياناتك المشتتة إلى قرارات واضحة ومربحة؟",
@@ -1678,6 +1819,19 @@
                 el.textContent = current + suffix;
             }, 30);
         }
+
+        // ============================================================
+        // FAQ ACCORDION EXCLUSIVE TOGGLE
+        // ============================================================
+        document.querySelectorAll('.faq-accordion details').forEach(detail => {
+            detail.addEventListener('toggle', () => {
+                if (detail.open) {
+                    document.querySelectorAll('.faq-accordion details').forEach(other => {
+                        if (other !== detail) other.removeAttribute('open');
+                    });
+                }
+            });
+        });
 
         // ============================================================
         // CONTACT FORM
