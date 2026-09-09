@@ -3049,3 +3049,315 @@ body.light-mode .project-desc-item strong {
         max-width: 520px;
     }
 }
+
+
+/* ==========================================================================
+   21. TESTIMONIALS & KHAMSAT REVIEWS SECTION
+   ========================================================================== */
+.testimonials-section {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.testimonials-badge-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: -1.25rem auto 3rem;
+}
+
+.khamsat-trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.95rem;
+    padding: 0.65rem 1.4rem;
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.28);
+    border-radius: 2rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body.light-mode .khamsat-trust-badge {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.08);
+}
+
+.khamsat-trust-badge .badge-stars {
+    display: flex;
+    gap: 0.25rem;
+    color: #f59e0b;
+    font-size: 0.95rem;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.khamsat-trust-badge .badge-text {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-dark-primary);
+}
+
+body.light-mode .khamsat-trust-badge .badge-text {
+    color: #15803d;
+}
+
+.khamsat-trust-badge .badge-verify-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    border-radius: 1rem;
+    color: #10b981;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.khamsat-trust-badge .badge-verify-link:hover {
+    background: rgba(16, 185, 129, 0.3);
+    color: #34d399;
+    transform: translateY(-1px);
+}
+
+body.light-mode .khamsat-trust-badge .badge-verify-link {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+body.light-mode .khamsat-trust-badge .badge-verify-link:hover {
+    background: #bbf7d0;
+    color: #14532d;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.85rem;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+    padding: 2.2rem 1.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 24px rgba(99, 102, 241, 0.15);
+}
+
+body.light-mode .testimonial-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .testimonial-card:hover {
+    transform: translateY(-6px);
+    border-color: #3b82f6;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.12);
+}
+
+.testimonial-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.testimonial-stars {
+    color: #f59e0b;
+    display: flex;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.35);
+}
+
+.testimonial-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+}
+
+body.light-mode .testimonial-verified {
+    background: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #059669;
+}
+
+.testimonial-quote {
+    position: relative;
+    margin: 0 0 1.75rem 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.testimonial-quote .quote-icon {
+    font-size: 1.5rem;
+    color: rgba(99, 102, 241, 0.35);
+    margin-bottom: 0.85rem;
+    display: block;
+}
+
+body.light-mode .testimonial-quote .quote-icon {
+    color: rgba(37, 99, 235, 0.25);
+}
+
+.testimonial-quote p {
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--text-dark-primary);
+    margin: 0;
+}
+
+body.light-mode .testimonial-quote p {
+    color: #1e293b;
+}
+
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.light-mode .testimonial-footer {
+    border-top: 1px solid #f1f5f9;
+}
+
+.testimonial-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(99, 102, 241, 0.35);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.light-mode .testimonial-avatar img {
+    border: 2px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.testimonial-info .client-name {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--text-dark-primary);
+    margin: 0 0 0.25rem 0;
+}
+
+body.light-mode .testimonial-info .client-name {
+    color: #0f172a;
+}
+
+.testimonial-info .client-service {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.82rem;
+    color: var(--accent-cyan);
+    font-weight: 500;
+}
+
+body.light-mode .testimonial-info .client-service {
+    color: #2563eb;
+}
+
+.testimonials-cta-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.khamsat-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.85rem 1.8rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-dark-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.khamsat-btn:hover {
+    background: rgba(79, 70, 229, 0.15);
+    border-color: rgba(99, 102, 241, 0.5);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+}
+
+body.light-mode .khamsat-btn {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .khamsat-btn:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+    color: #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+}
+
+/* RTL Support for Testimonials */
+html[dir="rtl"] .testimonial-quote .quote-icon,
+body.rtl .testimonial-quote .quote-icon,
+body[dir="rtl"] .testimonial-quote .quote-icon {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .testimonial-card,
+body.rtl .testimonial-card,
+body[dir="rtl"] .testimonial-card {
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .khamsat-trust-badge {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.8rem 1.2rem;
+    }
+}
