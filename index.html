@@ -1649,7 +1649,7 @@
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = isDark 
                     ? `rgba(79, 70, 229, ${this.opacity})` 
-                    : `rgba(79, 70, 229, ${this.opacity * 0.5})`;
+                    : `rgba(37, 99, 235, ${this.opacity * 0.25})`;
                 ctx.fill();
             }
         }
@@ -1672,7 +1672,7 @@
                         const opacity = (1 - dist / 120) * 0.15;
                         ctx.strokeStyle = isDark 
                             ? `rgba(124, 58, 237, ${opacity})` 
-                            : `rgba(79, 70, 229, ${opacity * 0.5})`;
+                            : `rgba(37, 99, 235, ${opacity * 0.25})`;
                         ctx.lineWidth = 0.5;
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
